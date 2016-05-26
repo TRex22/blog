@@ -44,7 +44,7 @@ owner:
     ad-client:
     ad-slot:
   bio:
-  avatar: bio-photo.jpg # 160x160 px image for author byline
+  avatar: logo_120_120.png # 160x160 px image for author byline
   disqus-shortname: TRex2218
 
 
