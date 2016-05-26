@@ -5,7 +5,7 @@ description: Ramblings of a programmer, gamer, modder, maker and computer scient
 logo: logo_120_120.png # 120x120 px default image used for Twitter summary card
 teaser: det_isocubes.jpg # 400x250 px default teaser image used in image archive grid
 locale: en
-url: blog # https://jasonchalom.com/blog
+url: https://jasonchalom.com/blog # 
 
 # Jekyll configuration
 
