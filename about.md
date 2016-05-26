@@ -1,10 +1,13 @@
 ---
-layout: page
-title: About
-permalink: /about/
+layout: article
+title: 
+date: 2016-05-26T20:10:37+02:00
+modified:
+excerpt:
+image:
+  feature:
+  teaser:
+  thumb:
+ads: false
 ---
 
-This is my coding blog where I post about coding things I have seen, or I am doing at the moment.
-There may also be some other posts about other things I am involoved with in my life.
-
-Any information about me can be found at my home page.

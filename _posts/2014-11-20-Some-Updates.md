@@ -1,6 +1,15 @@
 ---
-layout: post
+layout: article
 title: Some Updates
+modified:
+categories: 
+excerpt:
+tags: []
+image:
+  feature:
+  teaser:
+  thumb:
+date: 2014-11-20
 ---
 
 I have had exams which have been what has kept me away from doing projects and stuff.

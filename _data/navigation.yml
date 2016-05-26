@@ -1,0 +1,11 @@
+# Site navigation links
+
+- title: StuffILike
+  url: /StuffILike/
+  excerpt: "The things that I like, games, blogs, projects and podcasts."
+  image: det_dishonored.jpg
+
+- title: About
+  url: /about/
+  excerpt: "Things about me, not on the rest of this blog."
+  image: deadendthrills_sunset.jpg
