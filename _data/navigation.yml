@@ -5,6 +5,11 @@
   excerpt: "Creative projects I'm working on."
   image: det_letterbox_crop.png
 
+- title: Opinion
+  url: /opinion/
+  excerpt: "My opinion on stuffs."
+  image: det_wired.jpg
+
 - title: StuffILike
   url: /StuffILike/
   excerpt: "The things that I like, games, blogs, projects and podcasts."
