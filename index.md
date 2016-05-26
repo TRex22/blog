@@ -3,7 +3,7 @@ layout: home
 permalink: /
 title: "Latest Posts"
 image:
-  feature: into_the_light.jpg
+  feature: det_pleasedontgo.jpg
 ---
 
 <div class="tiles">
