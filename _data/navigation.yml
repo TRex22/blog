@@ -1,5 +1,10 @@
 # Site navigation links
 
+- title: Projects
+  url: /projects/
+  excerpt: "Creative projects I'm working on."
+  image: det_letterbox_crop.png
+
 - title: StuffILike
   url: /StuffILike/
   excerpt: "The things that I like, games, blogs, projects and podcasts."
