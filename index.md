@@ -1,7 +1,9 @@
 ---
-layout: archive
+layout: home
 permalink: /
 title: "Latest Posts"
+image:
+  feature: det_pleasedontgo.jpg
 ---
 
 <div class="tiles">
