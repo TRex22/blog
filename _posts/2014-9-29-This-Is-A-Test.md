@@ -5,6 +5,7 @@ modified:
 categories: 
 excerpt:
 tags: []
+comments: true
 image:
   feature:
   teaser:

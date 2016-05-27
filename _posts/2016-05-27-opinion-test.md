@@ -4,7 +4,8 @@ title: Opinion/test
 modified:
 categories: 
 excerpt:
-tags: []
+tags: [opinion]
+comments: true
 image:
   feature:
   teaser:
