@@ -1,5 +1,44 @@
 <!DOCTYPE html>
 <html>
+  <style>
+    /*Probably move into correct style sheet, only for heading*/
+    .heading_invert{
+      /*background-color: white;*/
+      /*display: block;
+      padding: 20px;
+      position: relative;
+      color: transparent;*/
+      /*color: #000; */
+      /*color: rgba(0, 0, 0, 0.5);*/
+    }
+/*
+    #container, #container h1 .heading_invert{
+      background: url({{ site.url }}/images/{{ page.image.feature }})
+    }
+
+    #container {
+        position: relative;
+    }
+
+    #container #gray {
+        background: rgba(0,0,0,.8);
+        padding-top: 8em;
+    }
+
+    #container h1 .heading_invert{
+        font-size: 8em;
+        padding-top: /* padding + border of div */;
+        /*position: absolute;
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+    }​*/
+    #content .heading_invert{
+     color: rgba(255,255,255,.5);  /* Fallback: assume this color ON TOP of image */
+     background: url({{ site.url }}/images/{{ page.image.feature }}) no-repeat;
+     -webkit-background-clip: text;
+     -webkit-text-fill-color: transparent;
+    }
+  </style>
   <head>
     <meta charset="utf-8">
     <title>{% if page.title %}{{ page.title }} • {% endif %}{{ site.title }}</title>
@@ -36,7 +75,7 @@
     {% if page.image.feature %}
     <div class="page-lead" style="background-image:url({{ site.url }}/images/{{ page.image.feature }})">
       <div class="wrap page-lead-content">
-        <h1>Ramblings Of A Dude</h1>
+        <h1 class="heading_invert">Ramblings Of A Dude</h1>
         <h2>Just my thoughts, opinions and cool projects I have done.</h2>
         <a href="https://github.com/TRex22" class="btn-inverse">View on GitHub</a>
       </div><!-- /.page-lead-content -->

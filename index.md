@@ -3,7 +3,7 @@ layout: home
 permalink: /
 title: "Latest Posts"
 image:
-  feature: solusalt.jpg
+  feature: racetrack.jpg
 ---
 
 <div class="tiles">
