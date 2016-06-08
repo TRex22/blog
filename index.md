@@ -12,4 +12,4 @@ image:
 {% endfor %}
 </div><!-- /.tiles -->
 
-<!-- {% include post-grid.html %} -->
+<!-- {% include post-grid.html %} 
