@@ -1,8 +1,8 @@
 ---
-layout: article
+layout: page
 title: 
 date: 2016-05-27T00:36:51+02:00
-modified:
+modified: 2016-06-08T03:26:51+02:00
 excerpt: "My opinion on stuffs."
 image:
   feature:

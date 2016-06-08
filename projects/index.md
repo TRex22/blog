@@ -1,5 +1,5 @@
 ---
-layout: article
+layout: page
 title: 
 date: 2016-05-26T23:36:58+02:00
 modified:
