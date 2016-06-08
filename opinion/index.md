@@ -1,6 +1,6 @@
 ---
 layout: page
-title: 
+title: My opinions on stuff.
 date: 2016-05-27T00:36:51+02:00
 modified: 2016-06-08T03:26:51+02:00
 excerpt: "My opinion on stuffs."
@@ -9,12 +9,11 @@ image:
   teaser:
   thumb:
 ads: false
+comments: false
 tag: opinion
 ---
 
-This is a work in progress.
-
-# My opinion on stuff.
+## This is a work in progress.
 
 <div class="tiles">
 {% for post in site.tags[page.tag] %}

@@ -33,6 +33,22 @@
 	line-height: .5 * $masthead-height; // half the height to center vertically
 	text-transform: uppercase;
 }
+.under-heading-h1{
+	padding: 0px;
+    margin: 0px;  
+}
+.under-heading {
+	color: #666666;
+	padding: 0px;
+    margin: 0px;    
+}
+.under-heading-font {
+	font-size: 1.3em;
+}
+.under-heading-modified-date {
+	color: grey;
+	font-size: 1.0em;
+}
 
 
 /*

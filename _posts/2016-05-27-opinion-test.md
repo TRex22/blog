@@ -4,7 +4,7 @@ title: Opinion/test
 modified:
 categories: 
 excerpt:
-tags: [opinion]
+tags: [opinion, project, stuff]
 comments: true
 image:
   feature:
