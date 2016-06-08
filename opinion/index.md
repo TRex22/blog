@@ -18,8 +18,6 @@ This is a work in progress.
 
 <div class="tiles">
 {% for post in site.tags[page.tag] %}
-  <li>
-    {{ post.date | date: "%B %d, %Y" }}: <a href="{{ post.url }}">{{ post.title }}</a>
-  </li>
+  {% include post-grid.html %}
 {% endfor %}
 </div>
