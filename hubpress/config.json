@@ -25,14 +25,14 @@
     ]
   },
   "site": {
-    "title": "",
-    "description": "",
-    "logo": "",
-    "cover": "",
+    "title": "Ramblings of a Dude",
+    "description": "Ramblings of a programmer, gamer, modder, maker and computer scientist ",
+    "logo": "logo_120_120.png",
+    "cover": "det_isocubes.jpg",
     "delay": "",
-    "postsPerPage": "",
+    "postsPerPage": "10",
     "googleAnalytics": "",
-    "disqus": ""
+    "disqus": "jasonchalom.com"
   },
   "socialnetwork": {
     "email": "contact@jasonchalom.com",
