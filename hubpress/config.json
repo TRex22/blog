@@ -2,9 +2,48 @@
   "meta": {
     "username": "TRex22",
     "repositoryName": "blog",
-    "branch": "gh-pages"
+    "branch": "gh-pages",
+    "cname": ""
   },
   "theme": {
-    "name": "Ghostium"
+    "name": "ghostium"
+  },
+  "urls": {
+    "site": "https://TRex22.github.io/blog",
+    "hubpress": "http://jasonchalom.com/blog",
+    "theme": "//TRex22.github.io/blog/themes/ghostium",
+    "images": "https://TRex22.github.io/blog/images"
+  },
+  "initialisationConfigComponent": {
+    "name": "initialise-configuration",
+    "computed": {},
+    "methods": {},
+    "staticRenderFns": [
+      null,
+      null,
+      null
+    ]
+  },
+  "site": {
+    "title": "Ramblings of a Dude",
+    "description": "Ramblings of a programmer, gamer, modder, maker and computer scientist ",
+    "logo": "logo_120_120.png",
+    "cover": "det_isocubes.jpg",
+    "delay": "",
+    "postsPerPage": "10",
+    "googleAnalytics": "",
+    "disqus": "jasonchalom.com"
+  },
+  "socialnetwork": {
+    "email": "contact@jasonchalom.com",
+    "github": "TRex22",
+    "twitter": "TRex2218",
+    "facebook": "",
+    "googleplus": "",
+    "instagram": "",
+    "pinterest": "",
+    "flickr": "",
+    "linkedin": "jasonchalom",
+    "stackoverflow": "http://stackoverflow.com/users/2147453/trex22"
   }
 }
