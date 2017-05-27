@@ -4,7 +4,7 @@
 :published_at: 2017-05-27
 :hp-tags: Computer Science, Algorithms
 // :hp-alt-title: My English Title
-
+http://jasonchalom.com/blog/hubpress/#
 This is a way to design an efficient implementation of a broadcast algorithm. Here I assume a system of nodes which are structured in a network ring topology with the condition of only 1-way communication. Here the broadcast algorithm is simple. When a broadcast occurs each node (except the root node) accepts a message and then passes it on to the next node. The root node then terminates the algorithm at the end.
 
 image::ring.png[size=0.5x]
