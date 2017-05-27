@@ -1,19 +1,25 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="HandheldFriendly" content="True" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <script>
+        // UNCOMMENT AND USE YOUR VARIABLES FOR DISQUS AND GOOGLE ANALYTICS
+        // var d_id  = '',
+        //     g_id  = 'UA-XXXXXXXX-X', // Format: UA-########-#, Example: UA-11220899-1
+        //     g_url = 'XXXXXXX.XXX' // Format: #####.####, Example: webdesignporto.com
+    </script>
 
     <title>Proof of an Optimal Broadcast Algorithm</title>
     <meta name="description" content="" />
-    <link href="//fonts.googleapis.com/css?family=Noto+Sans:300,400,700" rel="stylesheet" type="text/css">
-    <link href="//fonts.googleapis.com/css?family=Noto+Serif:400,700,400italic" rel="stylesheet" type="text/css">
-    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
-    <link href="//TRex22.github.io/blog/themes/saga/assets/css/style.css?v=1495918366279" rel="stylesheet" type="text/css">
-    <link href="//TRex22.github.io/blog/themes/saga/assets/css/animate.min.css?v=1495918366279" rel="stylesheet" type="text/css">
-    <link href="https://TRex22.github.io/blog/favicon.ico" rel="shortcut icon">
+
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="MobileOptimized" content="320" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" type="text/css" href="//TRex22.github.io/blog/themes/the-shell/assets/highlighter/prettify.css?v=1495918452518" />
+    <link rel="stylesheet" type="text/css" href="//TRex22.github.io/blog/themes/the-shell/assets/css/screen.css?v=1495918452518" />
+
     <link rel="canonical" href="https://TRex22.github.io/blog/2017/05/27/Proof-of-an-Optimal-Broadcast-Algorithm.html" />
     <meta name="referrer" content="origin" />
     
@@ -58,30 +64,27 @@
     <meta name="generator" content="HubPress" />
     <link rel="alternate" type="application/rss+xml" title="Ramblings of a Dude" href="https://TRex22.github.io/blog/rss/" />
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.10.0/styles/atom-one-dark.min.css">
+
 </head>
 <body class="post-template tag-Computer-Science tag-Algorithms">
-    <header id="header" class="animated fadeIn" style="background-image: url(images/covers/ring.png)">
-    <div class="header-background">
-    <section class="blog-content">
-        <a id="site-url" class="blog-title" href="https://TRex22.github.io/blog">Ramblings of a Dude</a>
-        <span class="blog-description">Ramblings of a programmer, gamer, modder, maker and computer scientist</span>
-        <nav class="links fadeIn animated">
-            <ul>
-                <li class="rss"><a title="RSS Feed" href="/rss/"><i class="fa fa-fw fa-rss-square"></i></a></li>
-        
-            </ul>
-        </nav>
-    </section>
-    <section class="header-content">
-        <h1 class="post-title animated fadeInUp">Proof of an Optimal Broadcast Algorithm</h1>
-        <span class="post-data"><span class="date animated fadeInUp"><i class="fa fa-clock-o"></i> <time class="timesince date" data-timesince="1495836000" datetime="2017-05-27T00:00" title="27 May 2017">a day ago</time></span>
-            <span class="tags animated fadeInUp"><i class="fa fa-tags"></i> <a href="https://TRex22.github.io/blog/tag/Computer-Science/">Computer Science</a>, <a href="https://TRex22.github.io/blog/tag/Algorithms/">Algorithms</a></span>
-            <span class="author animated fadeInUp"><i class="fa fa-user"></i> <a href="https://TRex22.github.io/blog/author/TRex22/">Jason Chalom</a></span></span>
-    </section>
-    </div>
-</header>
-<main id="main" class="content">
-    <article itemtype="http://schema.org/BlogPosting" class="animated fadeIn content post post tag-Computer-Science tag-Algorithms">
+
+    
+
+<main class="content" role="main">
+
+    <article class="post tag-Computer-Science tag-Algorithms">
+
+        <header class="post-header">
+            <a id="blog-logo" href="https://TRex22.github.io/blog">
+                    <img src="/logo.png" alt="Blog Logo" />
+            </a>
+        </header>
+
+
+        <span class="post-meta"><time datetime="2017-05-27">27 May 2017</time> on <a href="https://TRex22.github.io/blog/tag/Computer-Science/">Computer Science</a> | <a href="https://TRex22.github.io/blog/tag/Algorithms/">Algorithms</a></span>
+
+        <h1 class="post-title">Proof of an Optimal Broadcast Algorithm</h1>
+
         <section class="post-content">
             <div class="imageblock">
 <div class="content">
@@ -106,36 +109,60 @@ For n=k+1: There is 1 communication step.</p>
 </div>
         </section>
 
-    
-        <section class="post-comments">
-          <div id="disqus_thread"></div>
-          <script type="text/javascript">
-          var disqus_shortname = 'jasonchalomcom.disqus.com'; // required: replace example with your forum shortname
-          /* * * DON'T EDIT BELOW THIS LINE * * */
-          (function() {
-            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-          })();
-          </script>
-          <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-          <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
-        </section>
-    
+
+        <div id="disqus_thread"></div>
+        <script type="text/javascript">
+        var disqus_shortname = 'jasonchalomcom.disqus.com'; // required: replace example with your forum shortname
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function() {
+          var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+          dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+          (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+        <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+        
+
+        <footer class="post-footer">
+
+                <section class="author">
+                    <h4>Jason Chalom</h4>
+                    <p>I Build, I Make, I Code</p>
+                </section>
+
+            <section class="share">
+                <h4>Share this</h4>
+                <a class="icon-twitter" href="http://twitter.com/share?text=Proof of an Optimal Broadcast Algorithm&url=https://TRex22.github.io/blog/2017/05/27/Proof-of-an-Optimal-Broadcast-Algorithm.html"
+                    onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+                    <span class="hidden">Twitter</span>
+                </a>
+                <a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u=https://TRex22.github.io/blog/2017/05/27/Proof-of-an-Optimal-Broadcast-Algorithm.html"
+                    onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+                    <span class="hidden">Facebook</span>
+                </a>
+                <a class="icon-google-plus" href="https://plus.google.com/share?url=https://TRex22.github.io/blog/2017/05/27/Proof-of-an-Optimal-Broadcast-Algorithm.html"
+                   onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+                    <span class="hidden">Google+</span>
+                </a>
+            </section>
+
+        </footer>
+
+
     </article>
 
 </main>
-    <footer class="animated fadeIn" id="footer">
-        <section class="colophon">
-          <section class="copyright">Copyright &copy; <span itemprop="copyrightHolder">Ramblings of a Dude</span>. <span rel="license">All Rights Reserved</span>.</section>
-          <section class="poweredby">Published with <a class="icon-ghost" href="http://hubpress.io">HubPress</a></section>
-        </section>
-        <section class="bottom">
-          <section class="attribution">
-            <a href="http://github.com/Reedyn/Saga">Built with <i class="fa fa-heart"></i> and Free and Open-Source Software</a>.
-          </section>
-        </section>
+
+
+    <footer class="site-footer">
+        <!-- <a class="subscribe icon-feed" href="https://TRex22.github.io/blog/rss/"><span class="tooltip">Subscribe!</span></a> -->
+        <div class="inner">
+             <section class="copyright">All content copyright <a href="/">Ramblings of a Dude</a> &copy; 2017 &bull; All rights reserved.</section>
+             <section class="poweredby">Proudly published with <a href="http://hubpress.io">HubPress</span></a> in <a href="https://github.com/mityalebedev/The-Shell">The Shell</a> theme.</section>
+        </div>
     </footer>
+
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js?v="></script> <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.9.0/moment-with-locales.min.js?v="></script> <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.10.0/highlight.min.js?v="></script> 
       <script type="text/javascript">
         jQuery( document ).ready(function() {
@@ -150,7 +177,8 @@ For n=k+1: There is 1 communication step.</p>
       </script>
        
     <script src='https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>
-    <script src="//TRex22.github.io/blog/themes/saga/assets/js/scripts.js?v=1495918366279"></script>
-    
+
+    <script type='text/javascript' src="//TRex22.github.io/blog/themes/the-shell/assets/highlighter/prettify.js?v=1495918452518"></script>
+    <script type='text/javascript' src="//TRex22.github.io/blog/themes/the-shell/assets/js/shell.js?v=1495918452518"></script>
 </body>
 </html>
