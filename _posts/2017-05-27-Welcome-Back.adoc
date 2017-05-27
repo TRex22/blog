@@ -1,6 +1,6 @@
 = Hello Again ~~ :)
 // See https://hubpress.gitbooks.io/hubpress-knowledgebase/content/ for information about the parameters.
-:hp-image: /images/covers/aroundtheworld.png
+:hp-image: images/covers/aroundtheworld.png
 :published_at: 2017-05-27
 :hp-tags: HubPress, Blog, Open_Source, Opinion
 :hp-alt-title: Welcome Back!
