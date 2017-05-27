@@ -6,12 +6,12 @@
     "cname": ""
   },
   "theme": {
-    "name": "roon"
+    "name": "ichi"
   },
   "urls": {
     "site": "https://TRex22.github.io/blog",
     "hubpress": "http://jasonchalom.com/blog",
-    "theme": "//TRex22.github.io/blog/themes/uno-zen",
+    "theme": "//TRex22.github.io/blog/themes/roon",
     "images": "https://TRex22.github.io/blog/images"
   },
   "initialisationConfigComponent": {
