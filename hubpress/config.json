@@ -25,25 +25,25 @@
     ]
   },
   "site": {
-    "title": "Ramblings of a Dude",
-    "description": "Ramblings of a programmer, gamer, modder, maker and computer scientist ",
-    "logo": "/images/logo_120_120.png",
-    "cover": "/images/det_isocubes.jpg",
+    "title": "",
+    "description": "",
+    "logo": "",
+    "cover": "",
     "delay": "",
-    "postsPerPage": "10",
+    "postsPerPage": "",
     "googleAnalytics": "",
-    "disqus": "jasonchalom.com"
+    "disqus": ""
   },
   "socialnetwork": {
-    "email": "contact@jasonchalom.com",
-    "github": "https://github.com/TRex22",
-    "twitter": "https://twitter.com/TRex2218",
+    "email": "",
+    "github": "",
+    "twitter": "",
     "facebook": "",
     "googleplus": "",
     "instagram": "",
     "pinterest": "",
     "flickr": "",
-    "linkedin": "https://www.linkedin.com/in/jasonchalom/",
-    "stackoverflow": "http://stackoverflow.com/users/2147453/trex22"
+    "linkedin": "",
+    "stackoverflow": ""
   }
 }
