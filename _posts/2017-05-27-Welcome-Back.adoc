@@ -13,4 +13,10 @@ The interactive web editor is pretty cool and allows the user to save drafts and
 
 I am doing my first postgraduate degree at the moment so I am coding, writing and studying far more than ever before. However I want to get my online profile out there for future opportunities. 
 
+I have a lot of old projects that I would like to write up but put in their own archive area of the blog. I would also like to have a filter function for posts ... I see there is one on the admin side. If I can't find built in options I'll add them as I go.
+
+Finally getting this thing off the ground, only three years late! ;)
+
+-- Jason
+
 
