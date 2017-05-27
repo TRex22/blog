@@ -2,7 +2,8 @@
   "meta": {
     "username": "TRex22",
     "repositoryName": "blog",
-    "branch": "gh-pages"
+    "branch": "gh-pages",
+    "cname": ""
   },
   "theme": {
     "name": "ghostium"
@@ -22,5 +23,27 @@
       null,
       null
     ]
+  },
+  "site": {
+    "title": "",
+    "description": "",
+    "logo": "",
+    "cover": "",
+    "delay": "",
+    "postsPerPage": "",
+    "googleAnalytics": "",
+    "disqus": ""
+  },
+  "socialnetwork": {
+    "email": "contact@jasonchalom.com",
+    "github": "TRex22",
+    "twitter": "TRex2218",
+    "facebook": "",
+    "googleplus": "",
+    "instagram": "",
+    "pinterest": "",
+    "flickr": "",
+    "linkedin": "jasonchalom",
+    "stackoverflow": "http://stackoverflow.com/users/2147453/trex22"
   }
 }
