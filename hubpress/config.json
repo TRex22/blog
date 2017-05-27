@@ -2,16 +2,17 @@
   "meta": {
     "username": "TRex22",
     "repositoryName": "blog",
-    "branch": "gh-pages"
+    "branch": "gh-pages",
+    "cname": ""
   },
   "theme": {
     "name": "casper"
   },
   "urls": {
-    "site": "http://jasonchalom.com",
-    "hubpress": "http://jasonchalom.com",
-    "theme": "//jasonchalom.com/themes/casper",
-    "images": "http://jasonchalom.com/images"
+    "site": "https://TRex22.github.io/blog",
+    "hubpress": "http://jasonchalom.com/blog",
+    "theme": "//TRex22.github.io/blog/themes/casper",
+    "images": "https://TRex22.github.io/blog/images"
   },
   "initialisationConfigComponent": {
     "name": "initialise-configuration",
@@ -26,8 +27,8 @@
   "site": {
     "title": "Ramblings of a Dude",
     "description": "Ramblings of a programmer, gamer, modder, maker and computer scientist",
-    "logo": "/blog/images/logo_120_120.png",
-    "cover": "/blog/images/det_isocubes.jpg",
+    "logo": "blog/images/logo_120_120.png",
+    "cover": "blog/images/det_isocubes.jpg",
     "delay": "",
     "postsPerPage": "10",
     "googleAnalytics": "",
