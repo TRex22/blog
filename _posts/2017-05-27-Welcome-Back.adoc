@@ -7,6 +7,8 @@
 
 As you can see I am using a new blog renderer. It's called http://hubpress.io/[Hubpress] as in Wordpress :). I chose to move away from Skinny Bones because I have been crazy busy and I was not happy with the default configuration. This new tech is a lot more slick to use and even comes with an Admin panel which is powered by the GitHub api. 
 
+image::aroundtheworld.png[]
+
 I have lots of posts I have been holding off on writing up because of the work involved with the previous iteration of my blog site. Here there is less dev and more learning how this all fits together. I've just seen that there does not seem to be any spell check which is interesting ...
 
 The interactive web editor is pretty cool and allows the user to save drafts and preview current content which is handy.
