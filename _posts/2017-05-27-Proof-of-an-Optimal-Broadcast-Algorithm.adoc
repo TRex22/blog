@@ -1,6 +1,6 @@
 = Proof of an Optimal Broadcast Algorithm
 // See https://hubpress.gitbooks.io/hubpress-knowledgebase/content/ for information about the parameters.
-:hp-image: /images/covers/ring.png
+:hp-image: images/covers/ring.png
 :published_at: 2017-05-27
 :hp-tags: Computer Science, Algorithms
 // :hp-alt-title: My English Title
