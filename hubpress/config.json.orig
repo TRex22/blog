@@ -9,10 +9,17 @@
     "name": "casper"
   },
   "urls": {
-    "site": "https://TRex22.github.io/blog",
+<<<<<<< HEAD
+    "site": "http://jasonchalom.com/blog",
     "hubpress": "http://jasonchalom.com/blog/hubpress",
+    "theme": "//jasonchalom.com/themes/casper",
+    "images": "http://jasonchalom.com/images"
+=======
+    "site": "https://TRex22.github.io/blog",
+    "hubpress": "http://jasonchalom.com/blog",
     "theme": "//TRex22.github.io/blog/themes/casper",
     "images": "https://TRex22.github.io/blog/images"
+>>>>>>> 4e6e32ea8647e9a14bc91735a6285081f63cdbf2
   },
   "initialisationConfigComponent": {
     "name": "initialise-configuration",
