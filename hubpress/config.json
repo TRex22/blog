@@ -9,7 +9,7 @@
     "name": "ghostium"
   },
   "urls": {
-    "site": "https://TRex22.github.io/blog",
+    "site": "https://jasonchalom.com/blog",
     "hubpress": "http://jasonchalom.com/blog",
     "theme": "//TRex22.github.io/blog/themes/ghostium",
     "images": "https://TRex22.github.io/blog/images"
@@ -27,8 +27,8 @@
   "site": {
     "title": "Ramblings of a Dude",
     "description": "Ramblings of a programmer, gamer, modder, maker and computer scientist",
-    "logo": "logo.png",
-    "cover": "images/thearrangement.png",
+    "logo": "/logo.png",
+    "cover": "/images/thearrangement.png",
     "delay": "",
     "postsPerPage": "10",
     "googleAnalytics": "",
