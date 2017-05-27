@@ -11,4 +11,6 @@ image::broadcast.png[ring]
 
 Proof of optimality:
 
-For n
+RTP: For n-number of nodes the algorithm has maximum communication steps by O(n).
+
+For n=1: Where n is the number of nodes. There are 0 communication steps.
