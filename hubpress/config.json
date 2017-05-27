@@ -11,7 +11,7 @@
   "urls": {
     "site": "https://TRex22.github.io/blog",
     "hubpress": "http://jasonchalom.com/blog",
-    "theme": "//TRex22.github.io/blog/themes/ghostium",
+    "theme": "//TRex22.github.io/blog/themes/casper",
     "images": "https://TRex22.github.io/blog/images"
   },
   "initialisationConfigComponent": {
@@ -36,14 +36,14 @@
   },
   "socialnetwork": {
     "email": "contact@jasonchalom.com",
-    "github": "TRex22",
-    "twitter": "TRex2218",
+    "github": "https://github.com/TRex22",
+    "twitter": "https://twitter.com/TRex2218",
     "facebook": "",
     "googleplus": "",
     "instagram": "",
     "pinterest": "",
     "flickr": "",
-    "linkedin": "jasonchalom",
+    "linkedin": "https://www.linkedin.com/in/jasonchalom/",
     "stackoverflow": "http://stackoverflow.com/users/2147453/trex22"
   }
 }
