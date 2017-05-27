@@ -6,12 +6,12 @@
     "cname": ""
   },
   "theme": {
-    "name": "the-shell"
+    "name": "uno-zen"
   },
   "urls": {
     "site": "https://TRex22.github.io/blog",
     "hubpress": "http://jasonchalom.com/blog",
-    "theme": "//TRex22.github.io/blog/themes/saga",
+    "theme": "//TRex22.github.io/blog/themes/the-shell",
     "images": "https://TRex22.github.io/blog/images"
   },
   "initialisationConfigComponent": {
