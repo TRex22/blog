@@ -1,16 +1,17 @@
 = Proof of an Optimal Broadcast Algorithm
 // See https://hubpress.gitbooks.io/hubpress-knowledgebase/content/ for information about the parameters.
-:hp-image: /images/covers/broadcast.png
+:hp-image: /images/covers/ring.png
 :published_at: 2017-05-27
 :hp-tags: Computer Science, Algorithms
 // :hp-alt-title: My English Title
 
 This is a way to design an efficient implementation of a broadcast algorithm. Here I assume a system of nodes which are structured in a network ring topology with the condition of only 1-way communication.
 
-image::broadcast.png[ring]
+image::ring.png[size=0.5x]
 
 Proof of optimality:
 
 RTP: For n-number of nodes the algorithm has maximum communication steps by O(n).
-
-For n=1: Where n is the number of nodes. There are 0 communication steps.
+For n=1: There are 0 communication steps.
+For n=2: There is 1 communication step.
+For n=k: 
