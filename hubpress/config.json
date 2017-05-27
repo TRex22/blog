@@ -2,8 +2,7 @@
   "meta": {
     "username": "TRex22",
     "repositoryName": "blog",
-    "branch": "gh-pages",
-    "cname": "jasonchalom.com"
+    "branch": "gh-pages"
   },
   "theme": {
     "name": "casper"
@@ -25,25 +24,25 @@
     ]
   },
   "site": {
-    "title": "",
-    "description": "",
-    "logo": "",
-    "cover": "",
+    "title": "Ramblings of a Dude",
+    "description": "Ramblings of a programmer, gamer, modder, maker and computer scientist",
+    "logo": "/blog/images/logo_120_120.png",
+    "cover": "/blog/images/det_isocubes.jpg",
     "delay": "",
-    "postsPerPage": "",
+    "postsPerPage": "10",
     "googleAnalytics": "",
-    "disqus": ""
+    "disqus": "jasonchalomcom.disqus.com"
   },
   "socialnetwork": {
-    "email": "",
-    "github": "",
-    "twitter": "",
+    "email": "contact@jasonchalom.com",
+    "github": "https://github.com/TRex22",
+    "twitter": "https://twitter.com/TRex2218",
     "facebook": "",
     "googleplus": "",
     "instagram": "",
     "pinterest": "",
     "flickr": "",
-    "linkedin": "",
-    "stackoverflow": ""
+    "linkedin": "https://www.linkedin.com/in/jasonchalom/",
+    "stackoverflow": "https://stackoverflow.com/users/2147453/trex22"
   }
 }
