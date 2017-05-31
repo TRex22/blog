@@ -15,3 +15,5 @@
 - Cuda debugging + memory leaks
 - 2048 board sizes VS Difficulty
 - Eigenfaces and PCA projections
+- Fractal compression
+- Procedural Generation stuff
