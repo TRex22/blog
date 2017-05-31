@@ -1,0 +1,17 @@
+= Lists of topics
+// See https://hubpress.gitbooks.io/hubpress-knowledgebase/content/ for information about the parameters.
+// :hp-image: /covers/cover.png
+// :published_at: 2019-01-31
+// :hp-tags: HubPress, Blog, Open_Source,
+// :hp-alt-title: My English Title
+
+== Should only be a draft unposted post.
+- Finish broadcast proof
+- filter
+- Fourier proof
+- Cuda Tex
+- NCA
+- ME4 Settings and stuff
+- Cuda debugging + memory leaks
+- 2048 board sizes VS Difficulty
+- Eigenfaces and PCA projections
