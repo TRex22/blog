@@ -22,8 +22,8 @@
 - Latex tips
 - eda games?
 - np load in keras
-	softmax
-    argmax
+	- softmax
+    - argmax
 - cuda + || trees
 - Mossberg final
 - hubpress
@@ -37,4 +37,4 @@
 - theme edits
 	- share social media cool effects
     - image previews
-
+- image for posted post
