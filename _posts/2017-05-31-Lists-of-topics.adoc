@@ -7,7 +7,7 @@
 
 == Should only be a draft unposted post.
 - Finish broadcast proof
-- filter
+- filter as in image enhance
 - Fourier proof
 - Cuda Tex
 - NCA
