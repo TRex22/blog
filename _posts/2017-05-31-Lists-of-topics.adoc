@@ -17,3 +17,17 @@
 - Eigenfaces and PCA projections
 - Fractal compression
 - Procedural Generation stuff
+- Gogits
+- setup sshfs + sublime
+- Latex tips
+- eda games?
+- np load in keras
+	softmax
+    argmax
+- cuda + || trees
+- Mossberg final
+- hubpress
+- https, github, cloudflare
+- deadendthrills
+- live transcode
+- 
