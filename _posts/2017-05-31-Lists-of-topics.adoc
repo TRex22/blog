@@ -31,6 +31,8 @@
 - deadendthrills
 - live transcode
 - https://github.com/taviso/loadlibrary
+- why black boxes are not that great VS heuristics and stat methods (i.e. reliability and predictability)
+- 
 
 == updates to blog
 - tags/filter searching
