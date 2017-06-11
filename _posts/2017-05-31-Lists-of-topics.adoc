@@ -34,6 +34,7 @@
 - why black boxes are not that great VS heuristics and stat methods (i.e. reliability and predictability)
 - rpi amazing stacking
 - simple tools (norm audio + video + img)
+- sound mixer / eq
 
 == updates to blog
 - tags/filter searching
