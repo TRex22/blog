@@ -45,6 +45,7 @@
 	- projects
 - website stats
 - website perf
+- The act of doing something and how it feels
 
 === Book
 - Dyst
@@ -57,3 +58,4 @@
     - image previews
 - image for posted post
 - toastr
+- fix conflicts by doing something?
