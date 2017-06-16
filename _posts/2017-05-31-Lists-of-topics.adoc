@@ -37,6 +37,7 @@
 - sound mixer / eq
 - live translate
 - lists!
+- reducing plex size by a lot
 
 == updates to blog
 - tags/filter searching
