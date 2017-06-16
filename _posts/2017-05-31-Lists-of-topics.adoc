@@ -38,6 +38,17 @@
 - live translate
 - lists!
 - reducing plex size by a lot
+- schooling
+	- 1 stages
+    - 2 personal
+    - 3 work
+	- projects
+- website stats
+- website perf
+
+=== Book
+- Dyst
+- WS
 
 == updates to blog
 - tags/filter searching
