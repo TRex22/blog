@@ -35,6 +35,8 @@
 - rpi amazing stacking
 - simple tools (norm audio + video + img)
 - sound mixer / eq
+- live translate
+- lists!
 
 == updates to blog
 - tags/filter searching
