@@ -49,7 +49,10 @@
 - rational thought
 - windows bash wine 16bit backwards
 - windows bash cuda -> https://msdn.microsoft.com/en-us/commandline/wsl/about https://devtalk.nvidia.com/default/topic/968367/install-cuda-8-on-ubuntu-bash-windows-10/
-
+- pragmatic cleanup series
+ - win 10
+ - plex
+ - steam
 === Book
 - Dyst
 - WS
