@@ -53,6 +53,7 @@
  - win 10
  - plex
  - steam
+ - ffmpeg build
 === Book
 - Dyst
 - WS
