@@ -6,6 +6,26 @@
 // :hp-alt-title: My English Title
 
 == Should only be a draft unposted post.
+- Productivity
+- MS-DOS player
+- tmp mounts
+- tree lib
+- ai lib
+- sushi lib
+- sdl render cross platform
+- c++ cmdline
+- word / sentance shufller
+- service / product advisor
+- bow attack
+- ml - shadow
+- pics/silhouette
+- lua for scripting in c++
+- prolog js
+- c++ / lua / json ... boilerplate code
+- custom stylus
+- radioeffects
+- gpu passthrough + bumblebee
+- flight game -> steampunk / procedural / voxel
 - Finish broadcast proof
 - filter as in image enhance
 - Fourier proof
