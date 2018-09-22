@@ -17,8 +17,8 @@
     <meta name="MobileOptimized" content="320" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" type="text/css" href="//TRex22.github.io/blog/themes/the-shell/assets/highlighter/prettify.css?v=1495918877316" />
-    <link rel="stylesheet" type="text/css" href="//TRex22.github.io/blog/themes/the-shell/assets/css/screen.css?v=1495918877316" />
+    <link rel="stylesheet" type="text/css" href="//TRex22.github.io/blog/themes/the-shell/assets/highlighter/prettify.css?v=1537645787445" />
+    <link rel="stylesheet" type="text/css" href="//TRex22.github.io/blog/themes/the-shell/assets/css/screen.css?v=1537645787445" />
 
     <link rel="canonical" href="https://TRex22.github.io/blog/2017/05/27/Welcome-Back.html" />
     <meta name="referrer" content="origin" />
@@ -49,7 +49,7 @@
     "author": {
         "@type": "Person",
         "name": "Jason Chalom",
-        "image": "https://avatars2.githubusercontent.com/u/2313094?v=3",
+        "image": "https://avatars1.githubusercontent.com/u/2313094?v=4",
         "url": "https://TRex22.github.io/blog/author/TRex22/",
         "sameAs": "https://jasonchalom.com",
         "description": "I Build, I Make, I Code"
@@ -65,7 +65,9 @@
 
     <meta name="generator" content="HubPress" />
     <link rel="alternate" type="application/rss+xml" title="Ramblings of a Dude" href="https://TRex22.github.io/blog/rss/" />
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.10.0/styles/atom-one-dark.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/prism/1.14.0/themes/prism-okaidia.min.css">
+    
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>
 
 </head>
 <body class="post-template tag-Hub-Press tag-Blog tag-Open-Source tag-Opinion">
@@ -93,7 +95,7 @@
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="https://TRex22.github.io/blog/images/aroundtheworld.png" alt="aroundtheworld.png">
+<img src="https://TRex22.github.io/blog/images/aroundtheworld.png" alt="aroundtheworld">
 </div>
 </div>
 <div class="paragraph">
@@ -140,15 +142,15 @@
 
             <section class="share">
                 <h4>Share this</h4>
-                <a class="icon-twitter" href="http://twitter.com/share?text=Hello Again ~~ :)&url=https://TRex22.github.io/blog/2017/05/27/Welcome-Back.html"
+                <a class="icon-twitter" href="http://twitter.com/share?text=Hello Again ~~ :)&url=https://TRex22.github.io/blog/"
                     onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
                     <span class="hidden">Twitter</span>
                 </a>
-                <a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u=https://TRex22.github.io/blog/2017/05/27/Welcome-Back.html"
+                <a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u=https://TRex22.github.io/blog/"
                     onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
                     <span class="hidden">Facebook</span>
                 </a>
-                <a class="icon-google-plus" href="https://plus.google.com/share?url=https://TRex22.github.io/blog/2017/05/27/Welcome-Back.html"
+                <a class="icon-google-plus" href="https://plus.google.com/share?url=https://TRex22.github.io/blog/"
                    onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
                     <span class="hidden">Google+</span>
                 </a>
@@ -165,12 +167,18 @@
     <footer class="site-footer">
         <!-- <a class="subscribe icon-feed" href="https://TRex22.github.io/blog/rss/"><span class="tooltip">Subscribe!</span></a> -->
         <div class="inner">
-             <section class="copyright">All content copyright <a href="/">Ramblings of a Dude</a> &copy; 2017 &bull; All rights reserved.</section>
-             <section class="poweredby">Proudly published with <a href="http://hubpress.io">HubPress</span></a> in <a href="https://github.com/mityalebedev/The-Shell">The Shell</a> theme.</section>
+             <section class="copyright">All content copyright <a href="/">Ramblings of a Dude</a> &copy; 2018 &bull; All rights reserved.</section>
+             <section class="poweredby">Proudly published with <a href="https://hubpress.github.io">HubPress</span></a> in <a href="https://github.com/mityalebedev/The-Shell">The Shell</a> theme.</section>
         </div>
     </footer>
 
-    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js?v="></script> <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.9.0/moment-with-locales.min.js?v="></script> <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.10.0/highlight.min.js?v="></script> 
+
+    <script
+        src="https://code.jquery.com/jquery-3.2.1.min.js"
+        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous">
+    </script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.9.0/moment-with-locales.min.js?v="></script> <script src="//cdnjs.cloudflare.com/ajax/libs/prism/1.14.0/prism.min.js?v="></script> 
       <script type="text/javascript">
         jQuery( document ).ready(function() {
           // change date with ago
@@ -180,12 +188,10 @@
           });
         });
 
-        hljs.initHighlightingOnLoad();
+        // hljs.initHighlightingOnLoad();
       </script>
-       
-    <script src='https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>
 
-    <script type='text/javascript' src="//TRex22.github.io/blog/themes/the-shell/assets/highlighter/prettify.js?v=1495918877316"></script>
-    <script type='text/javascript' src="//TRex22.github.io/blog/themes/the-shell/assets/js/shell.js?v=1495918877316"></script>
+    <script type='text/javascript' src="//TRex22.github.io/blog/themes/the-shell/assets/highlighter/prettify.js?v=1537645787445"></script>
+    <script type='text/javascript' src="//TRex22.github.io/blog/themes/the-shell/assets/js/shell.js?v=1537645787445"></script>
 </body>
 </html>

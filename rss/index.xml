@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Ramblings of a Dude]]></title><description><![CDATA[Ramblings of a programmer, gamer, modder, maker and computer scientist]]></description><link>https://TRex22.github.io/blog</link><image><url>/images/thearrangement.png</url><title>Ramblings of a Dude</title><link>https://TRex22.github.io/blog</link></image><generator>RSS for Node</generator><lastBuildDate>Sat, 27 May 2017 21:27:37 GMT</lastBuildDate><atom:link href="https://TRex22.github.io/blog/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title><![CDATA[Hello Again ~~ :)]]></title><description><![CDATA[<div class="paragraph">
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Ramblings of a Dude]]></title><description><![CDATA[Ramblings of a programmer, gamer, modder, maker and computer scientist]]></description><link>https://TRex22.github.io/blog</link><image><url>/images/thearrangement.png</url><title>Ramblings of a Dude</title><link>https://TRex22.github.io/blog</link></image><generator>RSS for Node</generator><lastBuildDate>Sat, 22 Sep 2018 19:49:47 GMT</lastBuildDate><atom:link href="https://TRex22.github.io/blog/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title><![CDATA[Hello Again ~~ :)]]></title><description><![CDATA[<div class="paragraph">
 <p>As you can see I am using a new blog renderer. It&#8217;s called <a href="http://hubpress.io/">Hubpress</a> as in Wordpress :). I chose to move away from Skinny Bones because I have been crazy busy and I was not happy with the default configuration. This new tech is a lot more slick to use and even comes with an Admin panel which is powered by the GitHub api.</p>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="https://TRex22.github.io/blog/images/aroundtheworld.png" alt="aroundtheworld.png">
+<img src="https://TRex22.github.io/blog/images/aroundtheworld.png" alt="aroundtheworld">
 </div>
 </div>
 <div class="paragraph">
@@ -25,7 +25,7 @@
 <p>&#8201;&#8212;&#8201;Jason</p>
 </div>]]></description><link>https://TRex22.github.io/blog/2017/05/27/Welcome-Back.html</link><guid isPermaLink="true">https://TRex22.github.io/blog/2017/05/27/Welcome-Back.html</guid><category><![CDATA[HubPress]]></category><category><![CDATA[Blog]]></category><category><![CDATA[Open_Source]]></category><category><![CDATA[Opinion]]></category><dc:creator><![CDATA[Jason Chalom]]></dc:creator><pubDate>Sat, 27 May 2017 00:00:00 GMT</pubDate></item><item><title><![CDATA[Proof of an Optimal Broadcast Algorithm]]></title><description><![CDATA[<div class="imageblock">
 <div class="content">
-<img src="https://TRex22.github.io/blog/images/ring.png" alt="ring.png">
+<img src="https://TRex22.github.io/blog/images/ring.png" alt="ring">
 </div>
 </div>
 <div class="paragraph">
