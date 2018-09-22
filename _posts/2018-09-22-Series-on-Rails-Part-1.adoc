@@ -1,0 +1,5 @@
+= HTTParty, JSON requests and the right Content-Type
+:hp-image: /images/solusalt.jpg
+:published_at: 2018-09-22
+// :hp-tags: HubPress, Blog, Open_Source,
+// :hp-alt-title: My English Title
