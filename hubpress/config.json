@@ -22,6 +22,10 @@
       null,
       null,
       null
+    ],
+    "_compiled": true,
+    "beforeCreate": [
+      null
     ]
   },
   "site": {
@@ -32,7 +36,8 @@
     "delay": "",
     "postsPerPage": "10",
     "googleAnalytics": "",
-    "disqus": "jasonchalomcom.disqus.com"
+    "disqus": "jasonchalomcom.disqus.com",
+    "blogPath": ""
   },
   "socialnetwork": {
     "email": "contact@jasonchalom.com",
@@ -44,6 +49,14 @@
     "pinterest": "",
     "flickr": "",
     "linkedin": "https://www.linkedin.com/in/jasonchalom/",
-    "stackoverflow": "https://stackoverflow.com/users/2147453/trex22"
-  }
+    "stackoverflow": "https://stackoverflow.com/users/2147453/trex22",
+    "paypalme": "",
+    "opencollective": ""
+  },
+  "navigation": [
+    {
+      "label": "homepage",
+      "url": "https://jasonchalom.com"
+    }
+  ]
 }
