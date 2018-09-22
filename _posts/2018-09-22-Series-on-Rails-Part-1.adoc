@@ -1,12 +1,12 @@
 = HTTParty, JSON requests and the right Content-Type
-:hp-image: /images/solusalt.jpg
+:hp-image: solusalt.jpg
 :published_at: 2018-09-22
 :hp-tags: Open_Source, Ruby_On_Rails
 :hp-alt-title: Series on Rails: Part 1
 
-image::solusalt.jpg[]
-
 This post is about an issue I discovered whilst trying to debug an issue with a JSON request to a third party service. This request contained a JSON body where one of the fields was an array of strings but when querying the service to see what was sent - showed that the array was blank. The client used for this request makes use of HTTParty.
+
+image::solusalt.jpg[]
 
 Initially I wanted to figure out what my client was sending through to the service. I attempted to use `binding.pry` and step through the client to see if something was not functioning correctly.
 
