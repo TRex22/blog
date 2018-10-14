@@ -32,9 +32,9 @@
     "title": "Ramblings of a Dude",
     "description": "Ramblings of a programmer, gamer, modder, maker and computer scientist",
     "logo": "/logo.png",
-    "cover": "/images/thearrangement.png",
+    "cover": "/blog/images/thearrangement.png",
     "delay": "",
-    "postsPerPage": "10",
+    "postsPerPage": "20",
     "googleAnalytics": "",
     "disqus": "jasonchalomcom",
     "blogPath": "/blog"
