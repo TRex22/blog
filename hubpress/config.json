@@ -9,9 +9,9 @@
     "name": "the-shell"
   },
   "urls": {
-    "site": "https://jasonchalom.com/blog",
+    "site": "https://TRex22.github.io/blog",
     "hubpress": "https://jasonchalom.com/blog",
-    "theme": "https://jasonchalom.com/blog/themes/the-shell",
+    "theme": "//TRex22.github.io/blog/themes/the-shell",
     "images": "https://TRex22.github.io/blog/images"
   },
   "initialisationConfigComponent": {
