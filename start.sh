@@ -6,5 +6,6 @@ mkdir -p blog/images/
 # mount --bind images/ blog/images/ # Linux Only
 cp -rf images/ blog/images/
 jekyll serve
-rm blog/images
+rm blog/images >&/dev/null
 rm -rf blog/
+rm -rf _site
