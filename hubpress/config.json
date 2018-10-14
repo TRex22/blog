@@ -36,8 +36,8 @@
     "delay": "",
     "postsPerPage": "10",
     "googleAnalytics": "",
-    "disqus": "//jasonchalomcom.disqus.com",
-    "blogPath": "//jasonchalom.com/blog"
+    "disqus": "jasonchalomcom",
+    "blogPath": "/blog"
   },
   "socialnetwork": {
     "email": "contact@jasonchalom.com",
@@ -56,7 +56,7 @@
   "navigation": [
     {
       "label": "homepage",
-      "url": "https://jasonchalom.com/blog"
+      "url": "https://jasonchalom.com"
     }
   ]
 }
