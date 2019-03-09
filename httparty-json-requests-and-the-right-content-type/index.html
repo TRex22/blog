@@ -1,0 +1,207 @@
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+    <title>HTTParty, JSON requests and the right Content-Type</title>
+
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="../assets/css/normalize.css?v=14236004aa">
+    <link rel="stylesheet" type="text/css" href="../assets/css/screen.css?v=14236004aa">
+
+    <link rel="shortcut icon" href="../favicon.png" type="image/png">
+    <link rel="canonical" href="index.html">
+    <meta name="referrer" content="no-referrer-when-downgrade">
+    <link rel="amphtml" href="amp/index.html">
+    
+    <meta property="og:site_name" content="Ramblings of a Dude">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="HTTParty, JSON requests and the right Content-Type">
+    <meta property="og:description" content="This post is about an issue I discovered whilst trying to debug an issue with a
+JSON request to a third party service. This request contained a JSON body where
+one of the fields was an array of strings but when querying the service to see
+what was sent - showed that the array was blank. The client used for this
+request makes use of HTTParty.
+
+Initially I wanted to figure out what my client was sending through to the
+service. I attempted to use binding.pryand step through the client to see if
+som">
+    <meta property="og:url" content="http://localhost:2368/httparty-json-requests-and-the-right-content-type/">
+    <meta property="og:image" content="http://localhost:2368/content/images/2019/03/racetrack.jpg">
+    <meta property="article:published_time" content="2019-03-09T15:03:27.000Z">
+    <meta property="article:modified_time" content="2019-03-09T15:05:48.000Z">
+    <meta property="article:tag" content="Ruby_On_Rails">
+    <meta property="article:tag" content="Ruby">
+    <meta property="article:tag" content="Programming">
+    
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="HTTParty, JSON requests and the right Content-Type">
+    <meta name="twitter:description" content="This post is about an issue I discovered whilst trying to debug an issue with a
+JSON request to a third party service. This request contained a JSON body where
+one of the fields was an array of strings but when querying the service to see
+what was sent - showed that the array was blank. The client used for this
+request makes use of HTTParty.
+
+Initially I wanted to figure out what my client was sending through to the
+service. I attempted to use binding.pryand step through the client to see if
+som">
+    <meta name="twitter:url" content="http://localhost:2368/httparty-json-requests-and-the-right-content-type/">
+    <meta name="twitter:image" content="http://localhost:2368/content/images/2019/03/racetrack.jpg">
+    <meta name="twitter:label1" content="Written by">
+    <meta name="twitter:data1" content="Jason Chalom">
+    <meta name="twitter:label2" content="Filed under">
+    <meta name="twitter:data2" content="Ruby_On_Rails, Ruby, Programming">
+    <meta name="twitter:site" content="@TRex2218">
+    <meta property="og:image:width" content="1280">
+    <meta property="og:image:height" content="862">
+    
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "publisher": {
+        "@type": "Organization",
+        "name": "Ramblings of a Dude",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "http://localhost:2368/content/images/2019/03/logo.png",
+            "width": 60,
+            "height": 60
+        }
+    },
+    "author": {
+        "@type": "Person",
+        "name": "Jason Chalom",
+        "image": {
+            "@type": "ImageObject",
+            "url": "//www.gravatar.com/avatar/dc753a6fa3f7dfe6b801cccd7a2d5897?s=250&d=mm&r=x",
+            "width": 250,
+            "height": 250
+        },
+        "url": "http://localhost:2368/author/jason/",
+        "sameAs": []
+    },
+    "headline": "HTTParty, JSON requests and the right Content-Type",
+    "url": "http://localhost:2368/httparty-json-requests-and-the-right-content-type/",
+    "datePublished": "2019-03-09T15:03:27.000Z",
+    "dateModified": "2019-03-09T15:05:48.000Z",
+    "image": {
+        "@type": "ImageObject",
+        "url": "http://localhost:2368/content/images/2019/03/racetrack.jpg",
+        "width": 1280,
+        "height": 862
+    },
+    "keywords": "Ruby_On_Rails, Ruby, Programming",
+    "description": "This post is about an issue I discovered whilst trying to debug an issue with a\nJSON request to a third party service. This request contained a JSON body where\none of the fields was an array of strings but when querying the service to see\nwhat was sent - showed that the array was blank. The client used for this\nrequest makes use of HTTParty.\n\nInitially I wanted to figure out what my client was sending through to the\nservice. I attempted to use binding.pryand step through the client to see if\nsom",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "http://localhost:2368/"
+    }
+}
+    </script>
+
+    <meta name="generator" content="Ghost 2.16">
+    <link rel="alternate" type="application/rss+xml" title="Ramblings of a Dude" href="../rss/index.html">
+</head>
+<body class="post-template tag-ruby_on_rails tag-ruby tag-programming">
+
+    
+
+<main class="content" role="main">
+
+    <article class="post tag-ruby_on_rails tag-ruby tag-programming">
+
+        <header class="post-header">
+            <a id="blog-logo" href="../">
+                    <img src="../content/images/2019/03/logo.png" alt="Blog Logo">
+            </a>
+            <div class="inner">
+                <nav class="site-nav">
+    <div class="site-nav-left">
+            <ul class="nav" role="menu">
+    <li class="nav-home" role="menuitem"><a href="http://localhost:2368/blog/">Home</a></li>
+    <li class="nav-author" role="menuitem"><a href="../">Author</a></li>
+    <li class="nav-programming" role="menuitem"><a href="../tag/programming/">Programming</a></li>
+    <li class="nav-computer-science" role="menuitem"><a href="../tag/computer-science/">Computer Science</a></li>
+</ul>
+
+    </div>
+</nav>
+            </div>
+        </header>
+
+
+        <span class="post-meta"><time datetime="2019-03-09">09 Mar 2019</time> on <a href="../tag/ruby_on_rails/">Ruby_On_Rails</a> | <a href="../tag/ruby/">Ruby</a> | <a href="../tag/programming/">Programming</a></span>
+
+        <h1 class="post-title">HTTParty, JSON requests and the right Content-Type</h1>
+
+        <section class="post-content">
+            <!--kg-card-begin: image--><figure class="kg-card kg-image-card"><img src="../content/images/2019/03/racetrack-1.jpg" class="kg-image"></figure><!--kg-card-end: image--><p>This post is about an issue I discovered whilst trying to debug an issue with a JSON request to a third party service. This request contained a JSON body where one of the fields was an array of strings but when querying the service to see what was sent - showed that the array was blank. The client used for this request makes use of HTTParty.</p><p>Initially I wanted to figure out what my client was sending through to the service. I attempted to use <code>binding.pry</code>and step through the client to see if something was not functioning correctly.</p><p>The body being sent through was something similar to this:</p><!--kg-card-begin: code--><pre><code>{
+  "Param1": "Param1",
+  "Array": ["the", "and", "a"]
+}</code></pre><!--kg-card-end: code--><p>Everything seemed fine to me.</p><p>My next step was to backtrack and use Postman to check that the issue was the ruby client and not the third party.</p><ol><li>The body was identical</li><li>Here the array was correctly sent to the service and correctly stored</li><li>The headers in the Postman request matched those set in the client</li></ol><h1 id="an-example-of-the-response-i-get">An example of the response I get</h1><!--kg-card-begin: code--><pre><code>{
+  "ID": 123,
+  "Param1": "Param1",
+  "Array": []
+}</code></pre><!--kg-card-end: code--><p>Another dead-end. So I decided to try and log the raw request the client was making. One of the tools used in this project is WebMock to mock out out clients and third party calls.</p><p>From <a href="https://tech.degica.com/en/2015/02/26/recording-http-examples/">https://tech.degica.com/en/2015/02/26/recording-http-examples/</a> I added this callback:</p><!--kg-card-begin: code--><pre><code>WebMock.after_request do |req, response|
+  request = {
+    uri: req.uri.to_s,
+    method: req.method.to_s.upcase,
+    headers: req.headers,
+    body: req.body
+  }
+  puts JSON.pretty_generate(request)
+end</code></pre><!--kg-card-end: code--><p>This allowed me to record what my client was actually doing.</p><h1 id="the-raw-request">The raw request</h1><!--kg-card-begin: code--><pre><code>{
+  :uri=&gt;"", :method=&gt;"PUT",
+  :headers=&gt;{"X-Apikey"=&gt;"", "Accept"=&gt;"application/json"},
+  :body=&gt;"Param1=Param1&amp;Array[]=the&amp;Array[]=and&amp;Array[]=a"
+}</code></pre><!--kg-card-end: code--><p>Here what was most apparent is that the body seems to have been converted into a paramter string.</p><p><em>(A really good resource on HTTParty and parameter strings is: <a href="https://stackoverflow.com/questions/21856373/sending-array-variables-using-httparty">https://stackoverflow.com/questions/21856373/sending-array-variables-using-httparty</a>)</em></p><p>I then wrote a quick and dirty HTTParty call - in the method I was debugging - to the same endpoint but with hardcoded values and a body hash, and it worked :) I then did the exact same call but instead of the hardcoded values I used the same constructors as the previous code (the same header and body methods) and the exact same problem presented itself.</p><p>In my ensuing investigation I found that</p><!--kg-card-begin: code--><pre><code>"Content-Type" =&gt; "application/json"</code></pre><!--kg-card-end: code--><p>was missing from the header parameters in the client. Even though the service does not need this header parameter, HTTParty does need it, otherwise it will default to converting the body into a paramter string when HTTParty is called (<code>.get</code>, <code>.post</code>, <code>.put</code> …​) and given a URI and options hash.</p><p>If HTTParty is called with the options directly added after the URI it works as expected.</p><!--kg-card-begin: code--><pre><code>HTTParty.put('https://google.com/', headers: {}, body: {})</code></pre><!--kg-card-end: code--><p>But if it is called with an options hash this other behaviour is observed.</p><!--kg-card-begin: code--><pre><code>options = {headers: {}, body: {}}
+HTTParty.put('https://google.com/', options)</code></pre><!--kg-card-end: code--><p><code>format :json</code> after <code>include HTTParty</code> also may help.</p><h1 id="the-correct-raw-request">The correct raw request</h1><!--kg-card-begin: code--><pre><code>{
+  :uri=&gt;"", :method=&gt;"PUT",
+  :headers=&gt;{"X-Apikey"=&gt;"", "Accept"=&gt;"application/json"},
+  :body=&gt;{"Param1": "Param1", "Array": ["the", "and", "a"]}
+}</code></pre><!--kg-card-end: code--><h1 id="in-conclusion">In Conclusion</h1><p>I came across many people who seemed to be facing the same issue as myself but with no real solutions. The documentation did not seem to help and I found no mention of this behaviour.</p><p>By chance I was trying different configuration in desperation and came across the solution.</p>
+        </section>
+
+        <footer class="post-footer">
+
+                <section class="author">
+                    <h4>Jason Chalom</h4>
+                    <p></p>
+                </section>
+
+            <section class="share">
+                <h4>Share this</h4>
+                <a class="icon-twitter" href="http://twitter.com/share?text=HTTParty,%20JSON%20requests%20and%20the%20right%20Content-Type&amp;url=http://localhost:2368/httparty-json-requests-and-the-right-content-type/" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+                    <span class="hidden">Twitter</span>
+                </a>
+                <a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:2368/httparty-json-requests-and-the-right-content-type/" onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+                    <span class="hidden">Facebook</span>
+                </a>
+                <a class="icon-google-plus" href="https://plus.google.com/share?url=http://localhost:2368/httparty-json-requests-and-the-right-content-type/" onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+                    <span class="hidden">Google+</span>
+                </a>
+            </section>
+
+        </footer>
+
+
+    </article>
+
+</main>
+
+
+    <footer class="site-footer">
+        <!-- <a class="subscribe icon-feed" href="http://localhost:2368/rss/"><span class="tooltip">Subscribe!</span></a> -->
+        <div class="inner">
+             <section class="copyright">All content copyright <a href="../">Ramblings of a Dude</a> © 2019 • All rights reserved.</section>
+             <section class="poweredby">Proudly published with <a class="icon-ghost" href="http://ghost.org"><span class="icon-ghost-text">Ghost</span></a> in <a href="https://github.com/mityalebedev/The-Shell">The Shell</a> theme.</section>
+        </div>
+    </footer>
+
+    
+
+</body>
