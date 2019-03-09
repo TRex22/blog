@@ -9,8 +9,8 @@
     <meta name="MobileOptimized" content="320">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" type="text/css" href="../assets/css/normalize.css?v=14236004aa">
-    <link rel="stylesheet" type="text/css" href="../assets/css/screen.css?v=14236004aa">
+    <link rel="stylesheet" type="text/css" href="../assets/css/normalize.css?v=c515ae466e">
+    <link rel="stylesheet" type="text/css" href="../assets/css/screen.css?v=c515ae466e">
 
     <link rel="shortcut icon" href="../favicon.png" type="image/png">
     <link rel="canonical" href="index.html">
@@ -118,19 +118,6 @@ som">
             <a id="blog-logo" href="../">
                     <img src="../content/images/2019/03/logo.png" alt="Blog Logo">
             </a>
-            <div class="inner">
-                <nav class="site-nav">
-    <div class="site-nav-left">
-            <ul class="nav" role="menu">
-    <li class="nav-home" role="menuitem"><a href="http://localhost:2368/blog/">Home</a></li>
-    <li class="nav-author" role="menuitem"><a href="../">Author</a></li>
-    <li class="nav-programming" role="menuitem"><a href="../tag/programming/">Programming</a></li>
-    <li class="nav-computer-science" role="menuitem"><a href="../tag/computer-science/">Computer Science</a></li>
-</ul>
-
-    </div>
-</nav>
-            </div>
         </header>
 
 
@@ -166,12 +153,39 @@ HTTParty.put('https://google.com/', options)</code></pre><!--kg-card-end: code--
 }</code></pre><!--kg-card-end: code--><h1 id="in-conclusion">In Conclusion</h1><p>I came across many people who seemed to be facing the same issue as myself but with no real solutions. The documentation did not seem to help and I found no mention of this behaviour.</p><p>By chance I was trying different configuration in desperation and came across the solution.</p>
         </section>
 
+        <div id="disqus_thread"></div>
+        <script type="text/javascript">
+            var disqus_shortname = d_id;
+
+            /* * * DON'T EDIT BELOW THIS LINE * * */
+            (function() {
+                var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+                (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+            })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+        <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
         <footer class="post-footer">
 
-                <section class="author">
-                    <h4>Jason Chalom</h4>
-                    <p></p>
-                </section>
+
+            <section class="author">
+                <div id="disqus_thread"></div>
+                <script>
+                    var disqus_config = function () {
+                        this.page.url = "http://localhost:2368/httparty-json-requests-and-the-right-content-type/";
+                        this.page.identifier = "ghost-5c83d55cb2141f90f1cc1f9e"
+                    };
+                    (function() {
+                    var d = document, s = d.createElement('script');
+                    s.src = 'https://jasonchalomcom.disqus.com/embed.js';
+                    s.setAttribute('data-timestamp', +new Date());
+                    (d.head || d.body).appendChild(s);
+                    })();
+                </script>
+            </section>
 
             <section class="share">
                 <h4>Share this</h4>
