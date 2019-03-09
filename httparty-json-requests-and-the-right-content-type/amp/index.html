@@ -21,12 +21,12 @@ what was sent - showed that the array was blank. The client used for this
 request makes use of HTTParty.
 
 Initially I wanted to figure out what my client was sending through to the
-service. I attempted to use binding.pryand step through the client to see if
-som">
+service. I attempted to use binding.pry  and step through the client to see if
+s">
     <meta property="og:url" content="http://localhost:2368/httparty-json-requests-and-the-right-content-type/">
-    <meta property="og:image" content="http://localhost:2368/content/images/2019/03/racetrack.jpg">
-    <meta property="article:published_time" content="2019-03-09T15:03:27.000Z">
-    <meta property="article:modified_time" content="2019-03-09T15:05:48.000Z">
+    <meta property="og:image" content="http://localhost:2368/content/images/2019/03/aroundtheworld-1.png">
+    <meta property="article:published_time" content="2018-09-22T14:03:00.000Z">
+    <meta property="article:modified_time" content="2019-03-09T21:49:58.000Z">
     <meta property="article:tag" content="Ruby_On_Rails">
     <meta property="article:tag" content="Ruby">
     <meta property="article:tag" content="Programming">
@@ -40,17 +40,17 @@ what was sent - showed that the array was blank. The client used for this
 request makes use of HTTParty.
 
 Initially I wanted to figure out what my client was sending through to the
-service. I attempted to use binding.pryand step through the client to see if
-som">
+service. I attempted to use binding.pry  and step through the client to see if
+s">
     <meta name="twitter:url" content="http://localhost:2368/httparty-json-requests-and-the-right-content-type/">
-    <meta name="twitter:image" content="http://localhost:2368/content/images/2019/03/racetrack.jpg">
+    <meta name="twitter:image" content="http://localhost:2368/content/images/2019/03/aroundtheworld-1.png">
     <meta name="twitter:label1" content="Written by">
     <meta name="twitter:data1" content="Jason Chalom">
     <meta name="twitter:label2" content="Filed under">
     <meta name="twitter:data2" content="Ruby_On_Rails, Ruby, Programming">
     <meta name="twitter:site" content="@TRex2218">
-    <meta property="og:image:width" content="1280">
-    <meta property="og:image:height" content="862">
+    <meta property="og:image:width" content="900">
+    <meta property="og:image:height" content="300">
     
     <script type="application/ld+json">
 {
@@ -80,16 +80,16 @@ som">
     },
     "headline": "HTTParty, JSON requests and the right Content-Type",
     "url": "http://localhost:2368/httparty-json-requests-and-the-right-content-type/",
-    "datePublished": "2019-03-09T15:03:27.000Z",
-    "dateModified": "2019-03-09T15:05:48.000Z",
+    "datePublished": "2018-09-22T14:03:00.000Z",
+    "dateModified": "2019-03-09T21:49:58.000Z",
     "image": {
         "@type": "ImageObject",
-        "url": "http://localhost:2368/content/images/2019/03/racetrack.jpg",
-        "width": 1280,
-        "height": 862
+        "url": "http://localhost:2368/content/images/2019/03/aroundtheworld-1.png",
+        "width": 900,
+        "height": 300
     },
     "keywords": "Ruby_On_Rails, Ruby, Programming",
-    "description": "This post is about an issue I discovered whilst trying to debug an issue with a\nJSON request to a third party service. This request contained a JSON body where\none of the fields was an array of strings but when querying the service to see\nwhat was sent - showed that the array was blank. The client used for this\nrequest makes use of HTTParty.\n\nInitially I wanted to figure out what my client was sending through to the\nservice. I attempted to use binding.pryand step through the client to see if\nsom",
+    "description": "This post is about an issue I discovered whilst trying to debug an issue with a\nJSON request to a third party service. This request contained a JSON body where\none of the fields was an array of strings but when querying the service to see\nwhat was sent - showed that the array was blank. The client used for this\nrequest makes use of HTTParty.\n\nInitially I wanted to figure out what my client was sending through to the\nservice. I attempted to use binding.pry  and step through the client to see if\ns",
     "mainEntityOfPage": {
         "@type": "WebPage",
         "@id": "http://localhost:2368/"
@@ -124,15 +124,15 @@ som">
                 <h1 class="post-title">HTTParty, JSON requests and the right Content-Type</h1>
                 <section class="post-meta">
                     <p class="author">by <a href="../../author/jason/">Jason Chalom</a></p>
-                    <time class="post-date" datetime="2019-03-09">2019-03-09</time>
+                    <time class="post-date" datetime="2018-09-22">2018-09-22</time>
                 </section>
             </header>
             <figure class="post-image">
-                <amp-img src="http://localhost:2368/content/images/2019/03/racetrack.jpg" width="600" height="400" layout="responsive"></amp-img>
+                <amp-img src="http://localhost:2368/content/images/2019/03/aroundtheworld-1.png" width="600" height="400" layout="responsive"></amp-img>
             </figure>
             <section class="post-content">
 
-                <figure class="kg-card kg-image-card"></figure><p>This post is about an issue I discovered whilst trying to debug an issue with a JSON request to a third party service. This request contained a JSON body where one of the fields was an array of strings but when querying the service to see what was sent - showed that the array was blank. The client used for this request makes use of HTTParty.</p><p>Initially I wanted to figure out what my client was sending through to the service. I attempted to use <code>binding.pry</code>and step through the client to see if something was not functioning correctly.</p><p>The body being sent through was something similar to this:</p><pre><code>{
+                <p>This post is about an issue I discovered whilst trying to debug an issue with a JSON request to a third party service. This request contained a JSON body where one of the fields was an array of strings but when querying the service to see what was sent - showed that the array was blank. The client used for this request makes use of HTTParty.</p><p>Initially I wanted to figure out what my client was sending through to the service. I attempted to use <code>binding.pry</code> and step through the client to see if something was not functioning correctly.</p><p>The body being sent through was something similar to this:</p><pre><code>{
   "Param1": "Param1",
   "Array": ["the", "and", "a"]
 }</code></pre><p>Everything seemed fine to me.</p><p>My next step was to backtrack and use Postman to check that the issue was the ruby client and not the third party.</p><ol><li>The body was identical</li><li>Here the array was correctly sent to the service and correctly stored</li><li>The headers in the Postman request matched those set in the client</li></ol><h1 id="an-example-of-the-response-i-get">An example of the response I get</h1><pre><code>{
