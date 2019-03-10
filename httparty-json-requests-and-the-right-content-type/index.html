@@ -119,7 +119,21 @@ s">
             <a id="blog-logo" href="../">
                     <img src="../content/images/2019/03/logo.png" alt="Blog Logo">
             </a>
+
             <h1 class="blog-title" style="text-align: center;">HTTParty, JSON requests and the right Content-Type</h1>
+
+                <h2><time datetime="2018-09-22">22 September 2018</time> on <a href="../tag/ruby_on_rails/">Ruby_On_Rails</a> | <a href="../tag/ruby/">Ruby</a> | <a href="../tag/programming/">Programming</a></h2>
+
+            <nav id="site-nav" class="site-nav">
+    <div class="site-nav-left">
+            <ul class="nav" role="menu">
+    <li class="nav-home" role="menuitem"><a href="../">Home</a></li>
+    <li class="nav-programming" role="menuitem"><a href="../tag/programming/">Programming</a></li>
+    <li class="nav-computer-science" role="menuitem"><a href="../tag/computer-science/">Computer Science</a></li>
+</ul>
+
+    </div>
+</nav>
         </div>
     </div>
 </header>
@@ -127,7 +141,6 @@ s">
 <main class="content" role="main">
     <article class="post tag-ruby_on_rails tag-ruby tag-programming">
 
-        <span class="post-meta"><time datetime="2018-09-22">22 Sep 2018</time> on <a href="../tag/ruby_on_rails/">Ruby_On_Rails</a> | <a href="../tag/ruby/">Ruby</a> | <a href="../tag/programming/">Programming</a></span>
 
         <section class="post-content">
             <p>This post is about an issue I discovered whilst trying to debug an issue with a JSON request to a third party service. This request contained a JSON body where one of the fields was an array of strings but when querying the service to see what was sent - showed that the array was blank. The client used for this request makes use of HTTParty.</p><p>Initially I wanted to figure out what my client was sending through to the service. I attempted to use <code>binding.pry</code> and step through the client to see if something was not functioning correctly.</p><p>The body being sent through was something similar to this:</p><!--kg-card-begin: code--><pre><code>{
