@@ -1,0 +1,238 @@
+
+    <head>
+        <meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <script>
+            // UNCOMMENT AND USE YOUR VARIABLES FOR DISQUS AND GOOGLE ANALYTICS
+            var d_id  = 'jasonchalomcom'
+        </script>
+
+        <title>Non-Unique Elements in a Collection Ruby</title>
+
+        <meta name="HandheldFriendly" content="True">
+        <meta name="MobileOptimized" content="320">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" type="text/css" href="../assets/highlighter/prettify.css?v=c515ae466e">
+        <link rel="stylesheet" type="text/css" href="../assets/css/screen.css?v=c515ae466e">
+
+        <meta name="description" content="Using hashes and counts to determine which elements in a collection is non-unique">
+    <link rel="shortcut icon" href="../favicon.png" type="image/png">
+    <link rel="canonical" href="index.html">
+    <meta name="referrer" content="no-referrer-when-downgrade">
+    <link rel="amphtml" href="amp/index.html">
+    
+    <meta property="og:site_name" content="Ramblings of a Dude">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Non-Unique Elements in a Collection Ruby">
+    <meta property="og:description" content="This is a fairly simple problem but I keep finding myself looking this up and
+coming to a similar solution so I thought I would post this quick trick here. 
+
+In Ruby its really easy to find a uniq collection by using Array.uniq  or if you
+have Rails / ActiveRecord and its a database collection you can use .distinct. 
+
+I have found that when I am doing data analysis looking at what has happened
+over time, events, non-relational data or even relationships between models
+(when its relational data) ">
+    <meta property="og:url" content="http://localhost:2368/finding/">
+    <meta property="og:image" content="http://localhost:2368/content/images/2019/03/theexpanse.png">
+    <meta property="article:published_time" content="2019-03-10T10:49:21.000Z">
+    <meta property="article:modified_time" content="2019-03-10T10:49:21.000Z">
+    <meta property="article:tag" content="Ruby">
+    <meta property="article:tag" content="Ruby_On_Rails">
+    
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Non-Unique Elements in a Collection Ruby">
+    <meta name="twitter:description" content="This is a fairly simple problem but I keep finding myself looking this up and
+coming to a similar solution so I thought I would post this quick trick here. 
+
+In Ruby its really easy to find a uniq collection by using Array.uniq  or if you
+have Rails / ActiveRecord and its a database collection you can use .distinct. 
+
+I have found that when I am doing data analysis looking at what has happened
+over time, events, non-relational data or even relationships between models
+(when its relational data) ">
+    <meta name="twitter:url" content="http://localhost:2368/finding/">
+    <meta name="twitter:image" content="http://localhost:2368/content/images/2019/03/theexpanse.png">
+    <meta name="twitter:label1" content="Written by">
+    <meta name="twitter:data1" content="Jason Chalom">
+    <meta name="twitter:label2" content="Filed under">
+    <meta name="twitter:data2" content="Ruby, Ruby_On_Rails">
+    <meta name="twitter:site" content="@TRex2218">
+    <meta property="og:image:width" content="2000">
+    <meta property="og:image:height" content="990">
+    
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "publisher": {
+        "@type": "Organization",
+        "name": "Ramblings of a Dude",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "http://localhost:2368/content/images/2019/03/logo.png",
+            "width": 60,
+            "height": 60
+        }
+    },
+    "author": {
+        "@type": "Person",
+        "name": "Jason Chalom",
+        "image": {
+            "@type": "ImageObject",
+            "url": "//www.gravatar.com/avatar/dc753a6fa3f7dfe6b801cccd7a2d5897?s=250&d=mm&r=x",
+            "width": 250,
+            "height": 250
+        },
+        "url": "http://localhost:2368/author/jason/",
+        "sameAs": []
+    },
+    "headline": "Non-Unique Elements in a Collection Ruby",
+    "url": "http://localhost:2368/finding/",
+    "datePublished": "2019-03-10T10:49:21.000Z",
+    "dateModified": "2019-03-10T10:49:21.000Z",
+    "image": {
+        "@type": "ImageObject",
+        "url": "http://localhost:2368/content/images/2019/03/theexpanse.png",
+        "width": 2000,
+        "height": 990
+    },
+    "keywords": "Ruby, Ruby_On_Rails",
+    "description": "This is a fairly simple problem but I keep finding myself looking this up and\ncoming to a similar solution so I thought I would post this quick trick here. \n\nIn Ruby its really easy to find a uniq collection by using Array.uniq  or if you\nhave Rails / ActiveRecord and its a database collection you can use .distinct. \n\nI have found that when I am doing data analysis looking at what has happened\nover time, events, non-relational data or even relationships between models\n(when its relational data) ",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "http://localhost:2368/"
+    }
+}
+    </script>
+
+    <meta name="generator" content="Ghost 2.16">
+    <link rel="alternate" type="application/rss+xml" title="Ramblings of a Dude" href="../rss/index.html">
+    </head>
+
+    <body class="post-template tag-ruby tag-ruby_on_rails">
+
+        <header id="site-head" style="background-image: url(../content/images/2019/03/theexpanse.png)">
+    <div class="vertical animated bounceInDown">
+        <div id="site-head-content" class="inner">
+            <a id="blog-logo" href="../">
+                    <img src="../content/images/2019/03/logo.png" alt="Blog Logo">
+            </a>
+
+            <h1 class="blog-title" style="text-align: center;">Finding Non-Unique Elements in a Collection Using Ruby</h1>
+
+                <h2><time datetime="2019-03-10">10 March 2019</time></h2>
+
+            <nav id="site-nav" class="site-nav">
+    <div class="site-nav-left">
+            <ul class="nav" role="menu">
+    <li class="nav-home" role="menuitem"><a href="../">Home</a></li>
+    <li class="nav-programming" role="menuitem"><a href="../tag/programming/">Programming</a></li>
+    <li class="nav-computer-science" role="menuitem"><a href="../tag/computer-science/">Computer Science</a></li>
+</ul>
+
+    </div>
+</nav>
+        </div>
+    </div>
+</header>
+
+<main class="content" role="main">
+    <article class="post tag-ruby tag-ruby_on_rails featured">
+
+
+        <a href="../tag/ruby/">Ruby</a> | <a href="../tag/ruby_on_rails/">Ruby_On_Rails</a>
+
+        <section class="post-content">
+            <p>This is a fairly simple problem but I keep finding myself looking this up and coming to a similar solution so I thought I would post this quick trick here. </p><p>In Ruby its really easy to find a uniq collection by using <code>Array.uniq</code> or if you have Rails / ActiveRecord and its a database collection you can use <code>.distinct</code>. </p><p>I have found that when I am doing data analysis looking at what has happened over time, events, non-relational data or even relationships between models (when its relational data) - I tend to want to look at duplicate instances of data to compare them and see what is happening.</p><p>I keep coming back to this Stackoverflow question, <a href="https://stackoverflow.com/questions/15284182/ruby-how-to-find-non-unique-elements-in-array-and-print-each-with-number-of-occ">https://stackoverflow.com/questions/15284182/ruby-how-to-find-non-unique-elements-in-array-and-print-each-with-number-of-occ</a> but I find the solutions a bit too complex for a quick one off script. </p><p>My solution is to use a hash, a count and then process out what I'm looking for.</p><p>This other Stackoverflow question is a good starting point to figuring out how to create a hash of counts for elements in a collection. <a href="https://stackoverflow.com/questions/5128200/how-to-count-identical-string-elements-in-a-ruby-array">https://stackoverflow.com/questions/5128200/how-to-count-identical-string-elements-in-a-ruby-array</a></p><p>Here is my code which can be modified as needed:</p><!--kg-card-begin: code--><pre><code>counts = Hash.new(0)
+
+##
+# counts[element] can be changed to be anything which 
+# uniquely identifies the element and is supported by the Hash
+# i.e. counts[element.uuid]
+#
+collection.each { |element| counts[element] += 1 }
+
+# Once you have generated your count of occurances 
+# in a collection you can run a sanity check
+collection.uniq.size == counts.to_a.size
+
+##
+# Getting only non-unique elements
+# Structure: { "elementName": 3 }
+# with `to_a`: [ [ "elementName", 3 ] ]
+counts.to_a.select do |count|
+  return true if count.second &gt; 1
+end
+  </code></pre><!--kg-card-end: code--><p>There are issues using this strategy. The main issue is that this process is done in memory. If the dataset you are working with is very large you will have memory and processing issues. I mainly use this for once off checks locally rather than on a production system.</p>
+        </section>
+
+        <div id="disqus_thread"></div>
+        <script type="text/javascript">
+            var disqus_shortname = d_id;
+
+            /* * * DON'T EDIT BELOW THIS LINE * * */
+            (function() {
+                var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+                (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+            })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+        <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+        <footer class="post-footer">
+
+
+            <section class="share">
+                <h4>Share this</h4>
+                <a class="icon-twitter" href="http://twitter.com/share?text=Finding%20Non-Unique%20Elements%20in%20a%20Collection%20Using%20Ruby&amp;url=http://localhost:2368/finding/" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+                    <span class="hidden">Twitter</span>
+                </a>
+                <a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:2368/finding/" onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+                    <span class="hidden">Facebook</span>
+                </a>
+                <a class="icon-google-plus" href="https://plus.google.com/share?url=http://localhost:2368/finding/" onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+                    <span class="hidden">Google+</span>
+                </a>
+            </section>
+
+        </footer>
+
+
+    </article>
+</main>
+
+
+        <footer class="site-footer">
+            <!-- <a class="subscribe icon-feed" href="http://localhost:2368/rss/"><span class="tooltip">Subscribe!</span></a> -->
+            <div class="inner">
+                 <section class="copyright">All content copyright <a href="../">Ramblings of a Dude</a> © 2019 • All rights reserved.</section>
+                 <section class="poweredby">Proudly published with <a class="icon-ghost" href="http://ghost.org"><span class="icon-ghost-text">Ghost</span></a> in <a href="https://github.com/mityalebedev/The-Shell">The Shell</a> theme.</section>
+                 <section class="imagesfrom">Images used come from <a href="http://deadendthrills.com/">deadendthrills</a></section>
+                 <a class="icon-feed rss-tag" href="../rss/index.rss"> Subscribe to this rss feed</a>
+            </div>
+        </footer>
+
+        
+
+        <script>
+            var images = document.querySelectorAll('.kg-gallery-image img');
+            images.forEach(function (image) {
+                var container = image.closest('.kg-gallery-image');
+                var width = image.attributes.width.value;
+                var height = image.attributes.height.value;
+                var ratio = width / height;
+                container.style.flex = ratio + ' 1 0%';
+            })
+        </script>
+
+        <script type="text/javascript" src="../assets/highlighter/prettify.js?v=c515ae466e"></script>
+
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous">
+        </script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fitvids/1.2.0/jquery.fitvids.min.js"></script>
+        <script type="text/javascript" src="../assets/js/shell.js?v=c515ae466e"></script>
+    </body>
