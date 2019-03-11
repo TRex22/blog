@@ -2,56 +2,57 @@
 <head>
     <meta charset="utf-8">
 
-    <title>Non-Unique Elements in a Collection Ruby</title>
+    <title>Generating Chunks of Time Using Ruby</title>
 
     <meta name="HandheldFriendly" content="True">
     <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
 
-    <meta name="description" content="Using hashes and counts to determine which elements in a collection is non-unique">
     <link rel="shortcut icon" href="../../favicon.png" type="image/png">
     <link rel="canonical" href="../index.html">
     <meta name="referrer" content="no-referrer-when-downgrade">
     
     <meta property="og:site_name" content="Ramblings of a Dude">
     <meta property="og:type" content="article">
-    <meta property="og:title" content="Non-Unique Elements in a Collection Ruby">
-    <meta property="og:description" content="This is a fairly simple problem but I keep finding myself looking this up and
-coming to a similar solution so I thought I would post this quick trick here. 
+    <meta property="og:title" content="Generating Chunks of Time Using Ruby">
+    <meta property="og:description" content="The problem was iterating over a large amount of time series data. I figured
+generating a series of time chunks within certain start and end parameters, and
+of a certain time interval size could help scan through this data.
 
-In Ruby its really easy to find a uniq collection by using Array.uniq  or if you
-have Rails / ActiveRecord and its a database collection you can use .distinct. 
+I wrote the following method to help generate these chunks of time which can
+then be passed to an ActiveRecord query to search within that time chunk for
+relevant data. 
 
-I have found that when I am doing data analysis looking at what has happened
-over time, events, non-relational data or even relationships between models
-(when its relational data) ">
-    <meta property="og:url" content="http://localhost:2368/finding/">
-    <meta property="og:image" content="http://localhost:2368/content/images/2019/03/theexpanse.png">
-    <meta property="article:published_time" content="2019-03-10T10:49:21.000Z">
-    <meta property="article:modified_time" content="2019-03-10T10:49:21.000Z">
-    <meta property="article:tag" content="Ruby">
+What is returned is an array of arrays where each internal array contains a
+start time and an end time w">
+    <meta property="og:url" content="http://localhost:2368/generating-chunks-of-time/">
+    <meta property="og:image" content="http://localhost:2368/content/images/2019/03/thedescent-1.png">
+    <meta property="article:published_time" content="2019-03-11T17:40:38.000Z">
+    <meta property="article:modified_time" content="2019-03-11T17:41:31.000Z">
     <meta property="article:tag" content="Ruby_On_Rails">
     <meta property="article:tag" content="Programming">
+    <meta property="article:tag" content="Ruby">
     
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Non-Unique Elements in a Collection Ruby">
-    <meta name="twitter:description" content="This is a fairly simple problem but I keep finding myself looking this up and
-coming to a similar solution so I thought I would post this quick trick here. 
+    <meta name="twitter:title" content="Generating Chunks of Time Using Ruby">
+    <meta name="twitter:description" content="The problem was iterating over a large amount of time series data. I figured
+generating a series of time chunks within certain start and end parameters, and
+of a certain time interval size could help scan through this data.
 
-In Ruby its really easy to find a uniq collection by using Array.uniq  or if you
-have Rails / ActiveRecord and its a database collection you can use .distinct. 
+I wrote the following method to help generate these chunks of time which can
+then be passed to an ActiveRecord query to search within that time chunk for
+relevant data. 
 
-I have found that when I am doing data analysis looking at what has happened
-over time, events, non-relational data or even relationships between models
-(when its relational data) ">
-    <meta name="twitter:url" content="http://localhost:2368/finding/">
-    <meta name="twitter:image" content="http://localhost:2368/content/images/2019/03/theexpanse.png">
+What is returned is an array of arrays where each internal array contains a
+start time and an end time w">
+    <meta name="twitter:url" content="http://localhost:2368/generating-chunks-of-time/">
+    <meta name="twitter:image" content="http://localhost:2368/content/images/2019/03/thedescent-1.png">
     <meta name="twitter:label1" content="Written by">
     <meta name="twitter:data1" content="Jason Chalom">
     <meta name="twitter:label2" content="Filed under">
-    <meta name="twitter:data2" content="Ruby, Ruby_On_Rails, Programming">
+    <meta name="twitter:data2" content="Ruby_On_Rails, Programming, Ruby">
     <meta name="twitter:site" content="@TRex2218">
-    <meta property="og:image:width" content="2000">
-    <meta property="og:image:height" content="990">
+    <meta property="og:image:width" content="1626">
+    <meta property="og:image:height" content="2160">
     
     <script type="application/ld+json">
 {
@@ -79,18 +80,18 @@ over time, events, non-relational data or even relationships between models
         "url": "http://localhost:2368/author/jason/",
         "sameAs": []
     },
-    "headline": "Non-Unique Elements in a Collection Ruby",
-    "url": "http://localhost:2368/finding/",
-    "datePublished": "2019-03-10T10:49:21.000Z",
-    "dateModified": "2019-03-10T10:49:21.000Z",
+    "headline": "Generating Chunks of Time Using Ruby",
+    "url": "http://localhost:2368/generating-chunks-of-time/",
+    "datePublished": "2019-03-11T17:40:38.000Z",
+    "dateModified": "2019-03-11T17:41:31.000Z",
     "image": {
         "@type": "ImageObject",
-        "url": "http://localhost:2368/content/images/2019/03/theexpanse.png",
-        "width": 2000,
-        "height": 990
+        "url": "http://localhost:2368/content/images/2019/03/thedescent-1.png",
+        "width": 1626,
+        "height": 2160
     },
-    "keywords": "Ruby, Ruby_On_Rails, Programming",
-    "description": "This is a fairly simple problem but I keep finding myself looking this up and\ncoming to a similar solution so I thought I would post this quick trick here. \n\nIn Ruby its really easy to find a uniq collection by using Array.uniq  or if you\nhave Rails / ActiveRecord and its a database collection you can use .distinct. \n\nI have found that when I am doing data analysis looking at what has happened\nover time, events, non-relational data or even relationships between models\n(when its relational data) ",
+    "keywords": "Ruby_On_Rails, Programming, Ruby",
+    "description": "The problem was iterating over a large amount of time series data. I figured\ngenerating a series of time chunks within certain start and end parameters, and\nof a certain time interval size could help scan through this data.\n\nI wrote the following method to help generate these chunks of time which can\nthen be passed to an ActiveRecord query to search within that time chunk for\nrelevant data. \n\nWhat is returned is an array of arrays where each internal array contains a\nstart time and an end time w",
     "mainEntityOfPage": {
         "@type": "WebPage",
         "@id": "http://localhost:2368/"
@@ -122,38 +123,18 @@ over time, events, non-relational data or even relationships between models
         <article class="post">
 
             <header class="post-header">
-                <h1 class="post-title">Finding Non-Unique Elements in a Collection Using Ruby</h1>
+                <h1 class="post-title">Generating Chunks of Time Using Ruby</h1>
                 <section class="post-meta">
                     <p class="author">by <a href="../../author/jason/">Jason Chalom</a></p>
-                    <time class="post-date" datetime="2019-03-10">2019-03-10</time>
+                    <time class="post-date" datetime="2019-03-11">2019-03-11</time>
                 </section>
             </header>
             <figure class="post-image">
-                <amp-img src="http://localhost:2368/content/images/2019/03/theexpanse.png" width="600" height="400" layout="responsive"></amp-img>
+                <amp-img src="http://localhost:2368/content/images/2019/03/thedescent-1.png" width="600" height="400" layout="responsive"></amp-img>
             </figure>
             <section class="post-content">
 
-                <p>This is a fairly simple problem but I keep finding myself looking this up and coming to a similar solution so I thought I would post this quick trick here. </p><p>In Ruby its really easy to find a uniq collection by using <code>Array.uniq</code> or if you have Rails / ActiveRecord and its a database collection you can use <code>.distinct</code>. </p><p>I have found that when I am doing data analysis looking at what has happened over time, events, non-relational data or even relationships between models (when its relational data) - I tend to want to look at duplicate instances of data to compare them and see what is happening.</p><p>I keep coming back to this Stackoverflow question, <a href="https://stackoverflow.com/questions/15284182/ruby-how-to-find-non-unique-elements-in-array-and-print-each-with-number-of-occ">https://stackoverflow.com/questions/15284182/ruby-how-to-find-non-unique-elements-in-array-and-print-each-with-number-of-occ</a> but I find the solutions a bit too complex for a quick one off script. </p><p>My solution is to use a hash, a count and then process out what I'm looking for.</p><p>This other Stackoverflow question is a good starting point to figuring out how to create a hash of counts for elements in a collection. <a href="https://stackoverflow.com/questions/5128200/how-to-count-identical-string-elements-in-a-ruby-array">https://stackoverflow.com/questions/5128200/how-to-count-identical-string-elements-in-a-ruby-array</a></p><p>Here is my code which can be modified as needed:</p><pre><code>counts = Hash.new(0)
-
-##
-# counts[element] can be changed to be anything which 
-# uniquely identifies the element and is supported by the Hash
-# i.e. counts[element.uuid]
-#
-collection.each { |element| counts[element] += 1 }
-
-# Once you have generated your count of occurances 
-# in a collection you can run a sanity check
-collection.uniq.size == counts.to_a.size
-
-##
-# Getting only non-unique elements
-# Structure: { "elementName": 3 }
-# with `to_a`: [ [ "elementName", 3 ] ]
-counts.to_a.select do |count|
-  return true if count.second &gt; 1
-end
-  </code></pre><p>There are issues using this strategy. The main issue is that this process is done in memory. If the dataset you are working with is very large you will have memory and processing issues. I mainly use this for once off checks locally rather than on a production system.</p>
+                <p>The problem was iterating over a large amount of time series data. I figured generating a series of time chunks within certain start and end parameters, and of a certain time interval size could help scan through this data.</p><p>I wrote the following method to help generate these chunks of time which can then be passed to an ActiveRecord query to search within that time chunk for relevant data. </p><p>What is returned is an array of arrays where each internal array contains a start time and an end time which can then be used in further methods.</p><p>It escapes early if there is only one possible chunk for the given parameters. It also makes sure that the start time of the first interval is the given start parameter and the same is true for the end time of the last chunk.</p>
 
             </section>
 

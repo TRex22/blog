@@ -13,8 +13,8 @@
         <meta name="MobileOptimized" content="320">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <link rel="stylesheet" type="text/css" href="../assets/highlighter/prettify.css?v=c515ae466e">
-        <link rel="stylesheet" type="text/css" href="../assets/css/screen.css?v=c515ae466e">
+        <link rel="stylesheet" type="text/css" href="../assets/highlighter/prettify.css?v=a52c21ce00">
+        <link rel="stylesheet" type="text/css" href="../assets/css/screen.css?v=a52c21ce00">
 
         <meta name="description" content="Using hashes and counts to determine which elements in a collection is non-unique">
     <link rel="shortcut icon" href="../favicon.png" type="image/png">
@@ -40,6 +40,7 @@ over time, events, non-relational data or even relationships between models
     <meta property="article:modified_time" content="2019-03-10T10:49:21.000Z">
     <meta property="article:tag" content="Ruby">
     <meta property="article:tag" content="Ruby_On_Rails">
+    <meta property="article:tag" content="Programming">
     
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Non-Unique Elements in a Collection Ruby">
@@ -57,7 +58,7 @@ over time, events, non-relational data or even relationships between models
     <meta name="twitter:label1" content="Written by">
     <meta name="twitter:data1" content="Jason Chalom">
     <meta name="twitter:label2" content="Filed under">
-    <meta name="twitter:data2" content="Ruby, Ruby_On_Rails">
+    <meta name="twitter:data2" content="Ruby, Ruby_On_Rails, Programming">
     <meta name="twitter:site" content="@TRex2218">
     <meta property="og:image:width" content="2000">
     <meta property="og:image:height" content="990">
@@ -98,7 +99,7 @@ over time, events, non-relational data or even relationships between models
         "width": 2000,
         "height": 990
     },
-    "keywords": "Ruby, Ruby_On_Rails",
+    "keywords": "Ruby, Ruby_On_Rails, Programming",
     "description": "This is a fairly simple problem but I keep finding myself looking this up and\ncoming to a similar solution so I thought I would post this quick trick here. \n\nIn Ruby its really easy to find a uniq collection by using Array.uniq  or if you\nhave Rails / ActiveRecord and its a database collection you can use .distinct. \n\nI have found that when I am doing data analysis looking at what has happened\nover time, events, non-relational data or even relationships between models\n(when its relational data) ",
     "mainEntityOfPage": {
         "@type": "WebPage",
@@ -111,7 +112,7 @@ over time, events, non-relational data or even relationships between models
     <link rel="alternate" type="application/rss+xml" title="Ramblings of a Dude" href="../rss/index.html">
     </head>
 
-    <body class="post-template tag-ruby tag-ruby_on_rails">
+    <body class="post-template tag-ruby tag-ruby_on_rails tag-programming">
 
         <header id="site-head" style="background-image: url(../content/images/2019/03/theexpanse.png)">
     <div class="vertical animated bounceInDown">
@@ -139,10 +140,10 @@ over time, events, non-relational data or even relationships between models
 </header>
 
 <main class="content" role="main">
-    <article class="post tag-ruby tag-ruby_on_rails featured">
+    <article class="post tag-ruby tag-ruby_on_rails tag-programming featured">
 
 
-        <a href="../tag/ruby/">Ruby</a> | <a href="../tag/ruby_on_rails/">Ruby_On_Rails</a>
+        <a href="../tag/ruby/">Ruby</a> | <a href="../tag/ruby_on_rails/">Ruby_On_Rails</a> | <a href="../tag/programming/">Programming</a>
 
         <section class="post-content">
             <p>This is a fairly simple problem but I keep finding myself looking this up and coming to a similar solution so I thought I would post this quick trick here. </p><p>In Ruby its really easy to find a uniq collection by using <code>Array.uniq</code> or if you have Rails / ActiveRecord and its a database collection you can use <code>.distinct</code>. </p><p>I have found that when I am doing data analysis looking at what has happened over time, events, non-relational data or even relationships between models (when its relational data) - I tend to want to look at duplicate instances of data to compare them and see what is happening.</p><p>I keep coming back to this Stackoverflow question, <a href="https://stackoverflow.com/questions/15284182/ruby-how-to-find-non-unique-elements-in-array-and-print-each-with-number-of-occ">https://stackoverflow.com/questions/15284182/ruby-how-to-find-non-unique-elements-in-array-and-print-each-with-number-of-occ</a> but I find the solutions a bit too complex for a quick one off script. </p><p>My solution is to use a hash, a count and then process out what I'm looking for.</p><p>This other Stackoverflow question is a good starting point to figuring out how to create a hash of counts for elements in a collection. <a href="https://stackoverflow.com/questions/5128200/how-to-count-identical-string-elements-in-a-ruby-array">https://stackoverflow.com/questions/5128200/how-to-count-identical-string-elements-in-a-ruby-array</a></p><p>Here is my code which can be modified as needed:</p><!--kg-card-begin: code--><pre><code>counts = Hash.new(0)
@@ -229,10 +230,10 @@ end
             })
         </script>
 
-        <script type="text/javascript" src="../assets/highlighter/prettify.js?v=c515ae466e"></script>
+        <script type="text/javascript" src="../assets/highlighter/prettify.js?v=a52c21ce00"></script>
 
         <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous">
         </script>
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fitvids/1.2.0/jquery.fitvids.min.js"></script>
-        <script type="text/javascript" src="../assets/js/shell.js?v=c515ae466e"></script>
+        <script type="text/javascript" src="../assets/js/shell.js?v=a52c21ce00"></script>
     </body>
