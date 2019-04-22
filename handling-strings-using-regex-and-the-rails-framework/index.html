@@ -1,0 +1,223 @@
+
+    <head>
+        <meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <script>
+            // UNCOMMENT AND USE YOUR VARIABLES FOR DISQUS AND GOOGLE ANALYTICS
+            var d_id  = 'jasonchalomcom'
+        </script>
+
+        <title>Handling Strings Part 1 - String Parsing</title>
+
+        <meta name="HandheldFriendly" content="True">
+        <meta name="MobileOptimized" content="320">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" type="text/css" href="../assets/highlighter/prettify.css?v=2d01172b9d">
+        <link rel="stylesheet" type="text/css" href="../assets/css/screen.css?v=2d01172b9d">
+
+        <link rel="shortcut icon" href="../favicon.png" type="image/png">
+    <link rel="canonical" href="index.html">
+    <meta name="referrer" content="no-referrer-when-downgrade">
+    <link rel="amphtml" href="amp/index.html">
+    
+    <meta property="og:site_name" content="Ramblings of a Dude">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Handling Strings Part 1 - String Parsing">
+    <meta property="og:description" content="\* With Rails 4.2 and above *\ 
+
+--------------------------------------------------------------------------------
+
+Using Regex and The Rails Framework 
+I have been working on this post for months. One of Ruby's strengths is it
+string handling but working on a live system which processes lots of string
+inputs of varying types, requirements and potential pitfalls. 
+
+
+--------------------------------------------------------------------------------
+
+Part 1 - String Parsing
+The first part of this pos">
+    <meta property="og:url" content="http://localhost:2368/handling-strings-using-regex-and-the-rails-framework/">
+    <meta property="og:image" content="http://localhost:2368/content/images/2019/04/roadofmanysigns.png">
+    <meta property="article:published_time" content="2019-04-22T20:17:09.000Z">
+    <meta property="article:modified_time" content="2019-04-22T20:22:27.000Z">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Handling Strings Part 1 - String Parsing">
+    <meta name="twitter:description" content="\* With Rails 4.2 and above *\ 
+
+--------------------------------------------------------------------------------
+
+Using Regex and The Rails Framework 
+I have been working on this post for months. One of Ruby's strengths is it
+string handling but working on a live system which processes lots of string
+inputs of varying types, requirements and potential pitfalls. 
+
+
+--------------------------------------------------------------------------------
+
+Part 1 - String Parsing
+The first part of this pos">
+    <meta name="twitter:url" content="http://localhost:2368/handling-strings-using-regex-and-the-rails-framework/">
+    <meta name="twitter:image" content="http://localhost:2368/content/images/2019/04/roadofmanysigns.png">
+    <meta name="twitter:label1" content="Written by">
+    <meta name="twitter:data1" content="Jason Chalom">
+    <meta name="twitter:site" content="@TRex2218">
+    <meta property="og:image:width" content="2560">
+    <meta property="og:image:height" content="1055">
+    
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "publisher": {
+        "@type": "Organization",
+        "name": "Ramblings of a Dude",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "http://localhost:2368/content/images/2019/03/logo.png",
+            "width": 60,
+            "height": 60
+        }
+    },
+    "author": {
+        "@type": "Person",
+        "name": "Jason Chalom",
+        "image": {
+            "@type": "ImageObject",
+            "url": "//www.gravatar.com/avatar/dc753a6fa3f7dfe6b801cccd7a2d5897?s=250&d=mm&r=x",
+            "width": 250,
+            "height": 250
+        },
+        "url": "http://localhost:2368/author/jason/",
+        "sameAs": []
+    },
+    "headline": "Handling Strings Part 1 - String Parsing",
+    "url": "http://localhost:2368/handling-strings-using-regex-and-the-rails-framework/",
+    "datePublished": "2019-04-22T20:17:09.000Z",
+    "dateModified": "2019-04-22T20:22:27.000Z",
+    "image": {
+        "@type": "ImageObject",
+        "url": "http://localhost:2368/content/images/2019/04/roadofmanysigns.png",
+        "width": 2560,
+        "height": 1055
+    },
+    "description": "\\* With Rails 4.2 and above *\\ \n\n--------------------------------------------------------------------------------\n\nUsing Regex and The Rails Framework \nI have been working on this post for months. One of Ruby&#x27;s strengths is it\nstring handling but working on a live system which processes lots of string\ninputs of varying types, requirements and potential pitfalls. \n\n\n--------------------------------------------------------------------------------\n\nPart 1 - String Parsing\nThe first part of this pos",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "http://localhost:2368/"
+    }
+}
+    </script>
+
+    <meta name="generator" content="Ghost 2.16">
+    <link rel="alternate" type="application/rss+xml" title="Ramblings of a Dude" href="../rss/index.html">
+    </head>
+
+    <body class="post-template">
+
+            <header id="site-head" style="background-image: url(../content/images/2019/04/roadofmanysigns.png)">
+    <div class="vertical animated bounceInDown">
+        <div id="site-head-content" class="inner">
+            <a id="blog-logo" href="../">
+                    <img src="../content/images/2019/03/logo.png" alt="Blog Logo">
+            </a>
+
+            <h1 class="blog-title" style="text-align: center;">Handling Strings Part 1 - String Parsing</h1>
+
+                <h2><time datetime="2019-04-22">22 April 2019</time></h2>
+
+            <nav id="site-nav" class="site-nav">
+    <div class="site-nav-left">
+            <ul class="nav" role="menu">
+    <li class="nav-home" role="menuitem"><a href="../">Home</a></li>
+    <li class="nav-programming" role="menuitem"><a href="../tag/programming/">Programming</a></li>
+    <li class="nav-computer-science" role="menuitem"><a href="../tag/computer-science/">Computer Science</a></li>
+</ul>
+
+    </div>
+</nav>
+        </div>
+    </div>
+</header>
+
+<main class="content" role="main">
+    <article class="post">
+
+
+        
+
+        <section class="post-content">
+            <h3 id="-with-rails-4-2-and-above-">\* With Rails 4.2 and above *\ </h3><!--kg-card-begin: hr--><hr><!--kg-card-end: hr--><h2 id="using-regex-and-the-rails-framework">Using Regex and The Rails Framework </h2><p>I have been working on this post for months. One of Ruby's strengths is it string handling but working on a live system which processes lots of string inputs of varying types, requirements and potential pitfalls. </p><!--kg-card-begin: hr--><hr><!--kg-card-end: hr--><h2 id="part-1-string-parsing">Part 1 - String Parsing</h2><p>The first part of this post series focuses on processing strings for logic and fun. In many cases you may need to determine if a string is actually a number of some kind. </p><p>In many cases that would be checking that the string is an integer. The usual way of checking this in a bunch of languages I have used is to attempt to parse the string as an <code>Integer</code> or equivalent class and catch any exceptions. </p><p>This can be computationally costly and is considered an anti-pattern in some circles. The pattern implies two computational tasks, the parsing of the class and then wither the return true or the catch and return statements which affect the conditional. </p><p>Another issue (which is what I encountered) was that Im processing floating numbers and integers as strings - In which case both will return true as a <code>Float</code> using this pattern but when looking for an <code>Integer</code> will raise an exception.</p><p>My solution was to use <code>REGEX</code> which has appeared to work really well. </p><p>Another parsing issue I recently ran into was generating a <code>slug</code> or unique string identifier from a user inputted string field. This was to add this identifier to a database table after the fact. </p><p>I worked on a method that was first created by a colleague of mine for an almost exact use case - but in a different part of the codebase. There are many weird cases and my addition to the method was to just make it more robust to duplication and handling <code>nil</code>. </p><p>Its mostly a nest of ruby/rails string method calls and could be easily optimised and cleaned up into a lot less method calls and fewer <code>REGEX</code> but it is used in low operation use cases and the slug is then used by database <code>SQL</code> statements so performance was not a priority here.</p><h3 id="here-is-my-code-for-part-1-">Here is my code for part 1:</h3><!--kg-card-begin: html--><script src="https://gist.github.com/TRex22/ef22f249fa30a61a8ab001fa376a0791.js"></script><!--kg-card-end: html-->
+        </section>
+
+        <div id="disqus_thread"></div>
+        <script type="text/javascript">
+            var disqus_shortname = d_id;
+
+            /* * * DON'T EDIT BELOW THIS LINE * * */
+            (function() {
+                var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+                (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+            })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+        <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+        <footer class="post-footer">
+
+
+            <section class="share">
+                <h4>Share this</h4>
+                <a class="icon-twitter" href="http://twitter.com/share?text=Handling%20Strings%20Part%201%20-%20String%20Parsing&amp;url=http://localhost:2368/handling-strings-using-regex-and-the-rails-framework/" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+                    <span class="hidden">Twitter</span>
+                </a>
+                <a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:2368/handling-strings-using-regex-and-the-rails-framework/" onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+                    <span class="hidden">Facebook</span>
+                </a>
+                <a class="icon-google-plus" href="https://plus.google.com/share?url=http://localhost:2368/handling-strings-using-regex-and-the-rails-framework/" onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+                    <span class="hidden">Google+</span>
+                </a>
+            </section>
+
+        </footer>
+
+
+    </article>
+</main>
+
+
+            <footer class="site-footer" style="background-image: url(../content/images/2019/04/roadofmanysigns.png)">
+            <!-- <a class="subscribe icon-feed" href="http://localhost:2368/rss/"><span class="tooltip">Subscribe!</span></a> -->
+            <div class="inner">
+                 <section class="copyright">All content copyright <a href="../">Ramblings of a Dude</a> © 2019 • All rights reserved.</section>
+                 <section class="poweredby">Proudly published with <a class="icon-ghost" href="http://ghost.org"><span class="icon-ghost-text">Ghost</span></a> in <a href="https://github.com/mityalebedev/The-Shell">The Shell</a> theme.</section>
+                 <section class="imagesfrom">Images used come from <a href="http://deadendthrills.com/">deadendthrills</a></section>
+                 <section class="disclaimer"><p>Legal Stuff: Opinions expressed are solely my own and do not express the views or opinions of my employer.
+                 </p></section>
+                 <a class="icon-feed rss-tag" href="../rss/index.rss"> Subscribe to this rss feed</a>
+            </div>
+        </footer>
+
+        
+
+        <script>
+            var images = document.querySelectorAll('.kg-gallery-image img');
+            images.forEach(function (image) {
+                var container = image.closest('.kg-gallery-image');
+                var width = image.attributes.width.value;
+                var height = image.attributes.height.value;
+                var ratio = width / height;
+                container.style.flex = ratio + ' 1 0%';
+            })
+        </script>
+
+        <script type="text/javascript" src="../assets/highlighter/prettify.js?v=2d01172b9d"></script>
+
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous">
+        </script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fitvids/1.2.0/jquery.fitvids.min.js"></script>
+        <script type="text/javascript" src="../assets/js/shell.js?v=2d01172b9d"></script>
+    </body>
