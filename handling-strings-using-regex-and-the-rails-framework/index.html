@@ -13,8 +13,8 @@
         <meta name="MobileOptimized" content="320">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <link rel="stylesheet" type="text/css" href="../assets/highlighter/prettify.css?v=2d01172b9d">
-        <link rel="stylesheet" type="text/css" href="../assets/css/screen.css?v=2d01172b9d">
+        <link rel="stylesheet" type="text/css" href="../assets/highlighter/prettify.css?v=685756a48c">
+        <link rel="stylesheet" type="text/css" href="../assets/css/screen.css?v=685756a48c">
 
         <link rel="shortcut icon" href="../favicon.png" type="image/png">
     <link rel="canonical" href="index.html">
@@ -24,11 +24,7 @@
     <meta property="og:site_name" content="Ramblings of a Dude">
     <meta property="og:type" content="article">
     <meta property="og:title" content="Handling Strings Part 1 - String Parsing">
-    <meta property="og:description" content="\* With Rails 4.2 and above *\ 
-
---------------------------------------------------------------------------------
-
-Using Regex and The Rails Framework 
+    <meta property="og:description" content="Using Regex and The Rails Framework 
 I have been working on this post for months. One of Ruby's strengths is it
 string handling but working on a live system which processes lots of string
 inputs of varying types, requirements and potential pitfalls. 
@@ -37,18 +33,15 @@ inputs of varying types, requirements and potential pitfalls.
 --------------------------------------------------------------------------------
 
 Part 1 - String Parsing
-The first part of this pos">
+The first part of this post series focuses on processing strings for logic and
+fun. In many cases you may need to determine if a string is ac">
     <meta property="og:url" content="http://localhost:2368/handling-strings-using-regex-and-the-rails-framework/">
     <meta property="og:image" content="http://localhost:2368/content/images/2019/04/roadofmanysigns.png">
     <meta property="article:published_time" content="2019-04-22T20:17:09.000Z">
-    <meta property="article:modified_time" content="2019-04-22T20:22:27.000Z">
+    <meta property="article:modified_time" content="2019-04-26T17:38:56.000Z">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Handling Strings Part 1 - String Parsing">
-    <meta name="twitter:description" content="\* With Rails 4.2 and above *\ 
-
---------------------------------------------------------------------------------
-
-Using Regex and The Rails Framework 
+    <meta name="twitter:description" content="Using Regex and The Rails Framework 
 I have been working on this post for months. One of Ruby's strengths is it
 string handling but working on a live system which processes lots of string
 inputs of varying types, requirements and potential pitfalls. 
@@ -57,7 +50,8 @@ inputs of varying types, requirements and potential pitfalls.
 --------------------------------------------------------------------------------
 
 Part 1 - String Parsing
-The first part of this pos">
+The first part of this post series focuses on processing strings for logic and
+fun. In many cases you may need to determine if a string is ac">
     <meta name="twitter:url" content="http://localhost:2368/handling-strings-using-regex-and-the-rails-framework/">
     <meta name="twitter:image" content="http://localhost:2368/content/images/2019/04/roadofmanysigns.png">
     <meta name="twitter:label1" content="Written by">
@@ -95,14 +89,14 @@ The first part of this pos">
     "headline": "Handling Strings Part 1 - String Parsing",
     "url": "http://localhost:2368/handling-strings-using-regex-and-the-rails-framework/",
     "datePublished": "2019-04-22T20:17:09.000Z",
-    "dateModified": "2019-04-22T20:22:27.000Z",
+    "dateModified": "2019-04-26T17:38:56.000Z",
     "image": {
         "@type": "ImageObject",
         "url": "http://localhost:2368/content/images/2019/04/roadofmanysigns.png",
         "width": 2560,
         "height": 1055
     },
-    "description": "\\* With Rails 4.2 and above *\\ \n\n--------------------------------------------------------------------------------\n\nUsing Regex and The Rails Framework \nI have been working on this post for months. One of Ruby&#x27;s strengths is it\nstring handling but working on a live system which processes lots of string\ninputs of varying types, requirements and potential pitfalls. \n\n\n--------------------------------------------------------------------------------\n\nPart 1 - String Parsing\nThe first part of this pos",
+    "description": "Using Regex and The Rails Framework \nI have been working on this post for months. One of Ruby&#x27;s strengths is it\nstring handling but working on a live system which processes lots of string\ninputs of varying types, requirements and potential pitfalls. \n\n\n--------------------------------------------------------------------------------\n\nPart 1 - String Parsing\nThe first part of this post series focuses on processing strings for logic and\nfun. In many cases you may need to determine if a string is ac",
     "mainEntityOfPage": {
         "@type": "WebPage",
         "@id": "http://localhost:2368/"
@@ -148,7 +142,7 @@ The first part of this pos">
         
 
         <section class="post-content">
-            <h3 id="-with-rails-4-2-and-above-">\* With Rails 4.2 and above *\ </h3><!--kg-card-begin: hr--><hr><!--kg-card-end: hr--><h2 id="using-regex-and-the-rails-framework">Using Regex and The Rails Framework </h2><p>I have been working on this post for months. One of Ruby's strengths is it string handling but working on a live system which processes lots of string inputs of varying types, requirements and potential pitfalls. </p><!--kg-card-begin: hr--><hr><!--kg-card-end: hr--><h2 id="part-1-string-parsing">Part 1 - String Parsing</h2><p>The first part of this post series focuses on processing strings for logic and fun. In many cases you may need to determine if a string is actually a number of some kind. </p><p>In many cases that would be checking that the string is an integer. The usual way of checking this in a bunch of languages I have used is to attempt to parse the string as an <code>Integer</code> or equivalent class and catch any exceptions. </p><p>This can be computationally costly and is considered an anti-pattern in some circles. The pattern implies two computational tasks, the parsing of the class and then wither the return true or the catch and return statements which affect the conditional. </p><p>Another issue (which is what I encountered) was that Im processing floating numbers and integers as strings - In which case both will return true as a <code>Float</code> using this pattern but when looking for an <code>Integer</code> will raise an exception.</p><p>My solution was to use <code>REGEX</code> which has appeared to work really well. </p><p>Another parsing issue I recently ran into was generating a <code>slug</code> or unique string identifier from a user inputted string field. This was to add this identifier to a database table after the fact. </p><p>I worked on a method that was first created by a colleague of mine for an almost exact use case - but in a different part of the codebase. There are many weird cases and my addition to the method was to just make it more robust to duplication and handling <code>nil</code>. </p><p>Its mostly a nest of ruby/rails string method calls and could be easily optimised and cleaned up into a lot less method calls and fewer <code>REGEX</code> but it is used in low operation use cases and the slug is then used by database <code>SQL</code> statements so performance was not a priority here.</p><h3 id="here-is-my-code-for-part-1-">Here is my code for part 1:</h3><!--kg-card-begin: html--><script src="https://gist.github.com/TRex22/ef22f249fa30a61a8ab001fa376a0791.js"></script><!--kg-card-end: html-->
+            <h2 id="using-regex-and-the-rails-framework">Using Regex and The Rails Framework </h2><p>I have been working on this post for months. One of Ruby's strengths is it string handling but working on a live system which processes lots of string inputs of varying types, requirements and potential pitfalls. </p><!--kg-card-begin: hr--><hr><!--kg-card-end: hr--><h2 id="part-1-string-parsing">Part 1 - String Parsing</h2><p>The first part of this post series focuses on processing strings for logic and fun. In many cases you may need to determine if a string is actually a number of some kind. </p><p>In many cases that would be checking that the string is an integer. The usual way of checking this in a bunch of languages I have used is to attempt to parse the string as an <code>Integer</code> or equivalent class and catch any exceptions. </p><p>This can be computationally costly and is considered an anti-pattern in some circles. The pattern implies two computational tasks, the parsing of the class and then wither the return true or the catch and return statements which affect the conditional. </p><p>Another issue (which is what I encountered) was that Im processing floating numbers and integers as strings - In which case both will return true as a <code>Float</code> using this pattern but when looking for an <code>Integer</code> will raise an exception.</p><p>My solution was to use <code>REGEX</code> which has appeared to work really well. </p><p>Another parsing issue I recently ran into was generating a <code>slug</code> or unique string identifier from a user inputted string field. This was to add this identifier to a database table after the fact. </p><p>I worked on a method that was first created by a colleague of mine for an almost exact use case - but in a different part of the codebase. There are many weird cases and my addition to the method was to just make it more robust to duplication and handling <code>nil</code>. </p><p>Its mostly a nest of ruby/rails string method calls and could be easily optimised and cleaned up into a lot less method calls and fewer <code>REGEX</code> but it is used in low operation use cases and the slug is then used by database <code>SQL</code> statements so performance was not a priority here.</p><h3 id="here-is-my-code-for-part-1-">Here is my code for part 1:</h3><!--kg-card-begin: html--><script src="https://gist.github.com/TRex22/ef22f249fa30a61a8ab001fa376a0791.js"></script><!--kg-card-end: html-->
         </section>
 
         <div id="disqus_thread"></div>
@@ -214,10 +208,10 @@ The first part of this pos">
             })
         </script>
 
-        <script type="text/javascript" src="../assets/highlighter/prettify.js?v=2d01172b9d"></script>
+        <script type="text/javascript" src="../assets/highlighter/prettify.js?v=685756a48c"></script>
 
         <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous">
         </script>
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fitvids/1.2.0/jquery.fitvids.min.js"></script>
-        <script type="text/javascript" src="../assets/js/shell.js?v=2d01172b9d"></script>
+        <script type="text/javascript" src="../assets/js/shell.js?v=685756a48c"></script>
     </body>
